@@ -4,33 +4,22 @@
 # VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
 # Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 10 s each
-# Measurement: 3 iterations, 3 s each
+# Measurement: 2 iterations, 2 s each
 # Timeout: 10 min per iteration
 # Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Serialization.dsljson
 
-# Run progress: 0.00% complete, ETA 00:04:50
-# Fork: 1 of 2
-# Warmup Iteration   1: 45403046.437 ops/s
-# Warmup Iteration   2: 45359552.344 ops/s
-Iteration   1: 46371678.409 ops/s
-Iteration   2: 45136061.427 ops/s
-Iteration   3: 46228007.691 ops/s
-
-# Run progress: 10.00% complete, ETA 00:04:27
-# Fork: 2 of 2
-# Warmup Iteration   1: 43738516.499 ops/s
-# Warmup Iteration   2: 43838517.666 ops/s
-Iteration   1: 44510355.666 ops/s
-Iteration   2: 45101431.248 ops/s
-Iteration   3: 44225968.355 ops/s
+# Run progress: 0.00% complete, ETA 00:02:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 5227.132 ops/s
+# Warmup Iteration   2: 4852.746 ops/s
+Iteration   1: 4346.402 ops/s
+Iteration   2: 5119.223 ops/s
 
 
 Result "com.meylism.databind.Serialization.dsljson":
-  45262250.466 ±(99.9%) 2458915.303 ops/s [Average]
-  (min, avg, max) = (44225968.355, 45262250.466, 46371678.409), stdev = 876872.884
-  CI (99.9%): [42803335.162, 47721165.769] (assumes normal distribution)
+  4732.812 ops/s
 
 
 # JMH version: 1.34
@@ -39,33 +28,22 @@ Result "com.meylism.databind.Serialization.dsljson":
 # VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
 # Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 10 s each
-# Measurement: 3 iterations, 3 s each
+# Measurement: 2 iterations, 2 s each
 # Timeout: 10 min per iteration
 # Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Serialization.dsljson_reflection
 
-# Run progress: 20.00% complete, ETA 00:03:58
-# Fork: 1 of 2
-# Warmup Iteration   1: 47290319.926 ops/s
-# Warmup Iteration   2: 45469632.490 ops/s
-Iteration   1: 46929317.706 ops/s
-Iteration   2: 47473671.328 ops/s
-Iteration   3: 46056844.429 ops/s
-
-# Run progress: 30.00% complete, ETA 00:03:28
-# Fork: 2 of 2
-# Warmup Iteration   1: 47309190.088 ops/s
-# Warmup Iteration   2: 47840098.227 ops/s
-Iteration   1: 48773045.392 ops/s
-Iteration   2: 49306661.609 ops/s
-Iteration   3: 48859512.819 ops/s
+# Run progress: 20.00% complete, ETA 00:01:39
+# Fork: 1 of 1
+# Warmup Iteration   1: 4860.777 ops/s
+# Warmup Iteration   2: 4409.039 ops/s
+Iteration   1: 4998.412 ops/s
+Iteration   2: 4945.900 ops/s
 
 
 Result "com.meylism.databind.Serialization.dsljson_reflection":
-  47899842.214 ±(99.9%) 3587336.919 ops/s [Average]
-  (min, avg, max) = (46056844.429, 47899842.214, 49306661.609), stdev = 1279278.902
-  CI (99.9%): [44312505.295, 51487179.133] (assumes normal distribution)
+  4972.156 ops/s
 
 
 # JMH version: 1.34
@@ -74,33 +52,22 @@ Result "com.meylism.databind.Serialization.dsljson_reflection":
 # VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
 # Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 10 s each
-# Measurement: 3 iterations, 3 s each
+# Measurement: 2 iterations, 2 s each
 # Timeout: 10 min per iteration
 # Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Serialization.gson
 
-# Run progress: 40.00% complete, ETA 00:02:58
-# Fork: 1 of 2
-# Warmup Iteration   1: 6028523.487 ops/s
-# Warmup Iteration   2: 6294327.199 ops/s
-Iteration   1: 6287934.354 ops/s
-Iteration   2: 6325282.221 ops/s
-Iteration   3: 6297077.124 ops/s
-
-# Run progress: 50.00% complete, ETA 00:02:29
-# Fork: 2 of 2
-# Warmup Iteration   1: 5934244.757 ops/s
-# Warmup Iteration   2: 6293039.989 ops/s
-Iteration   1: 6212319.463 ops/s
-Iteration   2: 6234334.798 ops/s
-Iteration   3: 6163087.663 ops/s
+# Run progress: 40.00% complete, ETA 00:01:14
+# Fork: 1 of 1
+# Warmup Iteration   1: 12859.837 ops/s
+# Warmup Iteration   2: 12541.538 ops/s
+Iteration   1: 13147.312 ops/s
+Iteration   2: 10951.843 ops/s
 
 
 Result "com.meylism.databind.Serialization.gson":
-  6253339.271 ±(99.9%) 170455.598 ops/s [Average]
-  (min, avg, max) = (6163087.663, 6253339.271, 6325282.221), stdev = 60786.108
-  CI (99.9%): [6082883.672, 6423794.869] (assumes normal distribution)
+  12049.578 ops/s
 
 
 # JMH version: 1.34
@@ -109,33 +76,22 @@ Result "com.meylism.databind.Serialization.gson":
 # VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
 # Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 10 s each
-# Measurement: 3 iterations, 3 s each
+# Measurement: 2 iterations, 2 s each
 # Timeout: 10 min per iteration
 # Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Serialization.jackson
 
-# Run progress: 60.00% complete, ETA 00:01:59
-# Fork: 1 of 2
-# Warmup Iteration   1: 20421584.501 ops/s
-# Warmup Iteration   2: 21556468.183 ops/s
-Iteration   1: 21756367.110 ops/s
-Iteration   2: 21444397.449 ops/s
-Iteration   3: 21790069.681 ops/s
-
-# Run progress: 70.00% complete, ETA 00:01:29
-# Fork: 2 of 2
-# Warmup Iteration   1: 22161796.594 ops/s
-# Warmup Iteration   2: 23279171.013 ops/s
-Iteration   1: 23962108.138 ops/s
-Iteration   2: 23449058.247 ops/s
-Iteration   3: 23949258.049 ops/s
+# Run progress: 60.00% complete, ETA 00:00:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 5284.079 ops/s
+# Warmup Iteration   2: 5845.384 ops/s
+Iteration   1: 5944.004 ops/s
+Iteration   2: 5909.235 ops/s
 
 
 Result "com.meylism.databind.Serialization.jackson":
-  22725209.779 ±(99.9%) 3319330.806 ops/s [Average]
-  (min, avg, max) = (21444397.449, 22725209.779, 23962108.138), stdev = 1183705.341
-  CI (99.9%): [19405878.973, 26044540.584] (assumes normal distribution)
+  5926.620 ops/s
 
 
 # JMH version: 1.34
@@ -144,36 +100,25 @@ Result "com.meylism.databind.Serialization.jackson":
 # VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
 # Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 10 s each
-# Measurement: 3 iterations, 3 s each
+# Measurement: 2 iterations, 2 s each
 # Timeout: 10 min per iteration
 # Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Serialization.jackson_afterburner
 
-# Run progress: 80.00% complete, ETA 00:00:59
-# Fork: 1 of 2
-# Warmup Iteration   1: 22990094.304 ops/s
-# Warmup Iteration   2: 23808390.696 ops/s
-Iteration   1: 24533561.726 ops/s
-Iteration   2: 24093846.036 ops/s
-Iteration   3: 24373342.057 ops/s
-
-# Run progress: 90.00% complete, ETA 00:00:29
-# Fork: 2 of 2
-# Warmup Iteration   1: 19829302.107 ops/s
-# Warmup Iteration   2: 21013799.550 ops/s
-Iteration   1: 20744532.240 ops/s
-Iteration   2: 20789571.391 ops/s
-Iteration   3: 20677153.008 ops/s
+# Run progress: 80.00% complete, ETA 00:00:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 5445.266 ops/s
+# Warmup Iteration   2: 5334.299 ops/s
+Iteration   1: 5406.449 ops/s
+Iteration   2: 5232.284 ops/s
 
 
 Result "com.meylism.databind.Serialization.jackson_afterburner":
-  22535334.410 ±(99.9%) 5538910.101 ops/s [Average]
-  (min, avg, max) = (20677153.008, 22535334.410, 24533561.726), stdev = 1975228.699
-  CI (99.9%): [16996424.309, 28074244.510] (assumes normal distribution)
+  5319.366 ops/s
 
 
-# Run complete. Total time: 00:04:58
+# Run complete. Total time: 00:02:04
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -181,9 +126,9 @@ experiments, perform baseline and negative tests that provide experimental contr
 the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
 Do not assume the numbers tell you what you want them to tell.
 
-Benchmark                           Mode  Cnt         Score         Error  Units
-Serialization.dsljson              thrpt    6  45262250.466 ± 2458915.303  ops/s
-Serialization.dsljson_reflection   thrpt    6  47899842.214 ± 3587336.919  ops/s
-Serialization.gson                 thrpt    6   6253339.271 ±  170455.598  ops/s
-Serialization.jackson              thrpt    6  22725209.779 ± 3319330.806  ops/s
-Serialization.jackson_afterburner  thrpt    6  22535334.410 ± 5538910.101  ops/s
+Benchmark                           Mode  Cnt      Score   Error  Units
+Serialization.dsljson              thrpt    2   4732.812          ops/s
+Serialization.dsljson_reflection   thrpt    2   4972.156          ops/s
+Serialization.gson                 thrpt    2  12049.578          ops/s
+Serialization.jackson              thrpt    2   5926.620          ops/s
+Serialization.jackson_afterburner  thrpt    2   5319.366          ops/s

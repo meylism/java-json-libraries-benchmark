@@ -1,24 +1,25 @@
 package com.meylism.data.gen;
 
 import com.meylism.RandomUtils;
-import com.meylism.model.Strings;
+import com.meylism.model.NonAsciiStrings;
 
 import java.util.ArrayList;
 
-public class StringsGenerator implements DataGenerator<Strings> {
+public class NonAsciiStringsGenerator implements DataGenerator<NonAsciiStrings> {
     @Override
-    public int populate(Strings obj, int size) {
-        int approxSize = 14; // size of {'strings':[]}
+    public int populate(NonAsciiStrings obj, int size) {
+        int approxSize = 24; // size of {'non_ascii_strings':[]}
 
-        obj.strings = new ArrayList<>();
+        obj.nonAsciiStrings = new ArrayList<>();
         while (approxSize < size) {
-            approxSize += appendString(obj, size - approxSize);
+            approxSize += appendNonAsciiString(obj, size - approxSize);
             approxSize += 1; // size of ,
         }
         return approxSize;
     }
 
-    private static int appendString(final Strings strings, final int availableSize) {
+    private static int appendNonAsciiString(final NonAsciiStrings strings,
+                                            final int availableSize) {
         int expectedSize = 0;
         String random;
         int randomInt;
@@ -26,7 +27,7 @@ public class StringsGenerator implements DataGenerator<Strings> {
         while (expectedSize < availableSize) {
             randomInt = RandomUtils.nextInt(0, 200);
             random = RandomUtils.random(randomInt, false, false);
-            strings.strings.add(random);
+            strings.nonAsciiStrings.add(random);
             expectedSize += 3 + random.length(); // size of ',', quotes and string
         }
         return expectedSize;

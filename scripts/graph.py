@@ -9,9 +9,8 @@ CSV_HOME = "output/csv"
 OUTPUT_HOME = "../../charts"
 
 def draw_ser_and_deser(ser, deser, title):
-    multipliers, sizes = parse_title(ser)
+    sizes = parse_title(ser)
     scores, libraries = parse_scores(ser)
-    
     colors = ['#577590', '#f8961e', '#f94144', '#f9844a', '#277da1', 
               '#f9c74f', '#90be6d', '#43aa8b', '#4d908e', '#f3722c']
 
@@ -24,18 +23,18 @@ def draw_ser_and_deser(ser, deser, title):
     for i in range(len(scores)):
         fig.add_trace(go.Bar(name=sizes[i], 
                              x=libraries, 
-                             y=np.multiply(scores[i], multipliers[i]).tolist(), 
+                             y=scores[i],
                              legendgroup="group", 
                              marker=dict(color=colors[i])),
                       row=1, 
                       col=1)
         
-    multipliers, sizes = parse_title(deser)
+    sizes = parse_title(deser)
     scores, libraries = parse_scores(deser)
     for i in range(len(scores)):
         fig.add_trace(go.Bar(name=sizes[i], 
                              x=libraries, 
-                             y=np.multiply(scores[i], multipliers[i]).tolist(), 
+                             y=scores[i],
                              legendgroup="group", 
                              marker=dict(color=colors[i]), 
                              showlegend=False), 
@@ -57,7 +56,7 @@ def draw_ser_and_deser(ser, deser, title):
     if not os.path.exists(OUTPUT_HOME):
         os.mkdir(OUTPUT_HOME)
     pio.kaleido.scope.default_format = "webp"
-    fig.write_image("{}/{}.webp".format(OUTPUT_HOME, data_type), scale=2)
+    fig.write_image("{}/{}.webp".format(OUTPUT_HOME, data_type), scale=1)
 
 # Returns: scores, libraries
 def parse_scores(lines):
@@ -72,18 +71,15 @@ def parse_scores(lines):
 
     return np.transpose(scores).tolist(), libraries
 
-# Returns: multipliers
+# Returns: sizes
 def parse_title(lines):
     title = lines[0]
     sizes = title.split(',')[1:]
-    multipliers = []
     
     for size in sizes:
         result = re.findall('\\d+', size)
-        multipliers.append(int(result[0]))
 
-    multipliers = multipliers[::-1]
-    return multipliers, sizes
+    return sizes
 
 serde = {"ser": "deser", "deser": "ser"}
 os.chdir(CSV_HOME)

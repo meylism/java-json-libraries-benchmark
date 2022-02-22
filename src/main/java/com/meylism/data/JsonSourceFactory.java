@@ -9,7 +9,7 @@ public final class JsonSourceFactory {
 
     public static JsonSource<?> create() {
         Cli.AbstractCommand cmd = Config.load();
-        return create("integers", 1, 1);
+        return create(cmd.dataType, cmd.numberOfPayloads, cmd.sizeOfEachPayloadInKb * 1000);
     }
 
     public static JsonSource<?> create(final String datatype, final int quantity, final int size) {
@@ -19,6 +19,10 @@ public final class JsonSourceFactory {
                 return new IntegersSource(quantity, size);
             case FLOATS:
                 return new FloatsSource(quantity, size);
+            case STRINGS:
+                return new StringsSource(quantity, size);
+            case NON_ASCII_STRINGS:
+                return new NonAsciiStringsSource(quantity, size);
             default:
                 throw new RuntimeException();
         }

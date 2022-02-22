@@ -17,5 +17,6 @@ specification using payloads of different sizes.
 ![Integer](charts/integers.webp)
 ![Floats](charts/floats.webp)
 ![Strings](charts/strings.webp)
+![Non Ascii Strings ](charts/non_ascii_strings.webp)
 
 
