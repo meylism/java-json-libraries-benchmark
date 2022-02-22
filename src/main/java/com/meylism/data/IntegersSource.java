@@ -1,10 +1,8 @@
 package com.meylism.data;
 
-import com.meylism.data.gen.DataGenerator;
 import com.meylism.data.gen.IntegersGenerator;
 import com.meylism.model.Integers;
 import com.meylism.provider.IntegersJsonProvider;
-import com.meylism.provider.JsonProvider;
 
 public class IntegersSource extends JsonSource<Integers> {
     private static final IntegersJsonProvider integersJsonProvider = new IntegersJsonProvider();

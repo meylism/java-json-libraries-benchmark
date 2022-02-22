@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-DATA_TYPES="integers floats"
+DATA_TYPES="strings"
 NUMBERS="1"
 SIZES="1 10 100"
 COMMANDS="ser deser"

@@ -42,7 +42,6 @@ def draw_ser_and_deser(ser, deser, title):
                       row=2, 
                       col=1)
 
-
     fig.update_layout(
         title=data_type.capitalize(),
         xaxis_tickfont_size=14,
@@ -57,7 +56,6 @@ def draw_ser_and_deser(ser, deser, title):
     
     if not os.path.exists(OUTPUT_HOME):
         os.mkdir(OUTPUT_HOME)
-    print("{}/{}.webp".format(OUTPUT_HOME, data_type))  
     pio.kaleido.scope.default_format = "webp"
     fig.write_image("{}/{}.webp".format(OUTPUT_HOME, data_type), scale=2)
 
@@ -93,7 +91,6 @@ cwd = os.getcwd()
 csv_files = os.listdir(cwd)
 r = re.compile(".+-.+-.+\\.csv$")
 csv_files = list(filter(r.match, csv_files))
-print(csv_files)
 
 while len(csv_files) > 0:
     file_details = csv_files[0].split('.')[0].split('-')

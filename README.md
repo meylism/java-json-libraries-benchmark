@@ -12,3 +12,10 @@ specification using payloads of different sizes.
 |dsl-json|1.9.9| 
 |jsoniter|0.9.23|
 
+## Results
+
+![Integer](charts/integers.webp)
+![Floats](charts/floats.webp)
+![Strings](charts/strings.webp)
+
+
