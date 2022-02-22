@@ -1,0 +1,27 @@
+#!/bin/sh -e
+
+DATA_TYPES="integers"
+NUMBERS="1"
+SIZES="1 10 100"
+COMMANDS="ser deser"
+OUTPUT_DIR=output
+
+[ ! -d ${OUTPUT_DIR} ] && mkdir -p ${OUTPUT_DIR}
+
+export SEED=${RANDOM}
+
+for datatype in ${DATA_TYPES}; do
+    for n in ${NUMBERS}; do
+        for size in ${SIZES}; do
+            for command in ${COMMANDS}; do
+                outputFile="output/${datatype}-${command}-${n}-${size}.txt"
+                echo ./bench ${command} --number ${n} --size ${size} --datatype ${datatype}
+                ./bench ${command} \
+                    --number ${n} \
+                    --size ${size} \
+                    --datatype ${datatype} $*\
+                    | tee ${outputFile}
+            done
+        done
+    done
+done

@@ -1,0 +1,149 @@
+# JMH version: 1.34
+# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 3 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Deserialization.dsljson
+
+# Run progress: 0.00% complete, ETA 00:02:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 41622131.980 ops/s
+# Warmup Iteration   2: 43979149.556 ops/s
+Iteration   1: 45452450.344 ops/s
+Iteration   2: 45407565.549 ops/s
+Iteration   3: 42280964.216 ops/s
+
+
+Result "com.meylism.databind.Deserialization.dsljson":
+  44380326.703 ±(99.9%) 33171461.800 ops/s [Average]
+  (min, avg, max) = (42280964.216, 44380326.703, 45452450.344), stdev = 1818239.753
+  CI (99.9%): [11208864.903, 77551788.504] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 3 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Deserialization.dsljson_reflection
+
+# Run progress: 20.00% complete, ETA 00:01:59
+# Fork: 1 of 1
+# Warmup Iteration   1: 36610515.116 ops/s
+# Warmup Iteration   2: 34758111.582 ops/s
+Iteration   1: 37241808.549 ops/s
+Iteration   2: 36981841.274 ops/s
+Iteration   3: 35806716.407 ops/s
+
+
+Result "com.meylism.databind.Deserialization.dsljson_reflection":
+  36676788.743 ±(99.9%) 13949770.569 ops/s [Average]
+  (min, avg, max) = (35806716.407, 36676788.743, 37241808.549), stdev = 764633.996
+  CI (99.9%): [22727018.174, 50626559.312] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 3 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Deserialization.gson
+
+# Run progress: 40.00% complete, ETA 00:01:29
+# Fork: 1 of 1
+# Warmup Iteration   1: 1431903.217 ops/s
+# Warmup Iteration   2: 1265344.409 ops/s
+Iteration   1: 1238801.093 ops/s
+Iteration   2: 1212953.269 ops/s
+Iteration   3: 1219200.106 ops/s
+
+
+Result "com.meylism.databind.Deserialization.gson":
+  1223651.489 ±(99.9%) 246045.954 ops/s [Average]
+  (min, avg, max) = (1212953.269, 1223651.489, 1238801.093), stdev = 13486.609
+  CI (99.9%): [977605.535, 1469697.443] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 3 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Deserialization.jackson
+
+# Run progress: 60.00% complete, ETA 00:00:59
+# Fork: 1 of 1
+# Warmup Iteration   1: 11434152.888 ops/s
+# Warmup Iteration   2: 12543786.354 ops/s
+Iteration   1: 12484197.109 ops/s
+Iteration   2: 12039518.049 ops/s
+Iteration   3: 11820289.526 ops/s
+
+
+Result "com.meylism.databind.Deserialization.jackson":
+  12114668.228 ±(99.9%) 6171368.480 ops/s [Average]
+  (min, avg, max) = (11820289.526, 12114668.228, 12484197.109), stdev = 338273.531
+  CI (99.9%): [5943299.748, 18286036.708] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+# VM invoker: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 3 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Deserialization.jackson_afterburner
+
+# Run progress: 80.00% complete, ETA 00:00:29
+# Fork: 1 of 1
+# Warmup Iteration   1: 11705403.537 ops/s
+# Warmup Iteration   2: 11962367.628 ops/s
+Iteration   1: 12095763.712 ops/s
+Iteration   2: 11607991.379 ops/s
+Iteration   3: 10949171.195 ops/s
+
+
+Result "com.meylism.databind.Deserialization.jackson_afterburner":
+  11550975.429 ±(99.9%) 10497779.718 ops/s [Average]
+  (min, avg, max) = (10949171.195, 11550975.429, 12095763.712), stdev = 575418.729
+  CI (99.9%): [1053195.711, 22048755.146] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:29
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                             Mode  Cnt         Score          Error  Units
+Deserialization.dsljson              thrpt    3  44380326.703 ± 33171461.800  ops/s
+Deserialization.dsljson_reflection   thrpt    3  36676788.743 ± 13949770.569  ops/s
+Deserialization.gson                 thrpt    3   1223651.489 ±   246045.954  ops/s
+Deserialization.jackson              thrpt    3  12114668.228 ±  6171368.480  ops/s
+Deserialization.jackson_afterburner  thrpt    3  11550975.429 ± 10497779.718  ops/s
