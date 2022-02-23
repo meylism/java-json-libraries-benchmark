@@ -8,12 +8,10 @@
 # Timeout: 10 min per iteration
 # Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
-# Benchmark: com.meylism.databind.Deserialization.dsljson
+# Benchmark: com.meylism.databind.Serialization.dsljson
 
 # Run progress: 0.00% complete, ETA 00:13:20
 # Fork: 1 of 2
 OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
-# Warmup Iteration   1: 16383.719 ops/s
-# Warmup Iteration   2: 17704.815 ops/s
-# Warmup Iteration   3: 17795.591 ops/s
-# Warmup Iteration   4: 
+# Warmup Iteration   1: 31659.486 ops/s
+# Warmup Iteration   2: 
