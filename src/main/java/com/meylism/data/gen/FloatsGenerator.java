@@ -6,7 +6,7 @@ import com.meylism.model.Integers;
 
 import java.util.ArrayList;
 
-public class FloatGenerator implements DataGenerator<Floats> {
+public class FloatsGenerator implements DataGenerator<Floats> {
     @Override
     public int populate(Floats obj, int size) {
         int approxSize = 13; // size of {'floats':[]}

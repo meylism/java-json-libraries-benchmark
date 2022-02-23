@@ -23,6 +23,8 @@ public final class JsonSourceFactory {
                 return new StringsSource(quantity, size);
             case NON_ASCII_STRINGS:
                 return new NonAsciiStringsSource(quantity, size);
+            case BOOLEANS:
+                return new BooleansSource(quantity, size);
             default:
                 throw new RuntimeException();
         }

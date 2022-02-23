@@ -61,4 +61,7 @@ public final class RandomUtils {
     public static String random(int count, int start, int end, final boolean letters, final boolean numbers, final char[] chars) {
         return RandomStringUtils.random(count, start, end, letters, numbers, chars, RANDOM);
     }
+
+    public static Boolean nextBoolean() { return nextInt(0, 2) == 1 ? Boolean.TRUE :
+            Boolean.FALSE; }
 }

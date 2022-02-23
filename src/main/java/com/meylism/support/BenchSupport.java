@@ -33,6 +33,13 @@ public enum BenchSupport {
             new LibApi(Library.JACKSON_AFTERBURNER, Api.DATABIND),
             new LibApi(Library.DSLJSON, Api.DATABIND),
             new LibApi(Library.DSLJSON_REFLECTION, Api.DATABIND)
+    ),
+    BOOLEANS(
+            new LibApi(Library.GSON, Api.DATABIND),
+            new LibApi(Library.JACKSON, Api.DATABIND),
+            new LibApi(Library.JACKSON_AFTERBURNER, Api.DATABIND),
+            new LibApi(Library.DSLJSON, Api.DATABIND),
+            new LibApi(Library.DSLJSON_REFLECTION, Api.DATABIND)
     );
 
     private final List<LibApi> LibApis;

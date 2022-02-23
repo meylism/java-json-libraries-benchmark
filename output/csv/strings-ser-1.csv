@@ -1,6 +1,0 @@
-Test,1kb (x1),100kb (x100)
-dsljson,599125.38,473281.2
-dsljson_reflection,687226.496,497215.6
-gson,1002822.309,1204957.8
-jackson,646750.977,592662.0
-jackson_afterburner,639322.791,531936.6
