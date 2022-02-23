@@ -1,8 +1,8 @@
 #!/bin/sh -e
 
-DATA_TYPES="booleans"
+DATA_TYPES="integers floats strings non_ascii_strings booleans"
 NUMBERS="1"
-SIZES="1 10 100 1000 10000"
+SIZES="1 100 1000 10000"
 COMMANDS="ser deser"
 OUTPUT_DIR=output
 

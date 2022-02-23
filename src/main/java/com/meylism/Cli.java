@@ -47,6 +47,8 @@ public class Cli {
         public int forks = 2;
         @Option(type = OptionType.GLOBAL, name = "-wi", description = "JMH: warmup iterations. Defaults to 5.")
         public int warmupIterations = 5;
+        @Option(type = OptionType.GLOBAL, name = "-wt", description = "JMH: warmup time in seconds. Defaults to 10.")
+        public int warmupTime = 10;
         @Option(type = OptionType.GLOBAL, name = "-i", description = "JMH: measurement iterations. Defaults to 10.")
         public int measurementIterations = 10;
         @Option(type = OptionType.GLOBAL, name = "-m", description = "JMH: measurement time in seconds. Defaults to 3.")
@@ -63,7 +65,7 @@ public class Cli {
         public int numberOfPayloads = 1;
         @Option(name = "--size", description = "Size of each payload in Kb. Defaults to 1.")
         public int sizeOfEachPayloadInKb = 1;
-        @Option(name = "--datatype", description = "Type of data to test. Defaults to 'users'. See 'info' to know more.")
+        @Option(name = "--datatype", description = "Type of data to test. Defaults to 'integers'. See 'info' to know more.")
         public String dataType = "integers";
 
         private String mode;
@@ -77,9 +79,10 @@ public class Cli {
             ChainedOptionsBuilder b = new OptionsBuilder()
                     .forks(forks)
                     .warmupIterations(warmupIterations)
+                    .warmupTime(new TimeValue(warmupTime, TimeUnit.SECONDS))
                     .measurementIterations(measurementIterations)
-                    .measurementTime(new TimeValue(measurementTime, TimeUnit.SECONDS))
-                    .threads(threads);
+                    .measurementTime(new TimeValue(measurementTime, TimeUnit.SECONDS)).
+                    threads(threads);
 
             List<String> includes = includes();
             if (includes.isEmpty()) {
