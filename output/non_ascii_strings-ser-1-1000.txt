@@ -1,0 +1,309 @@
+# JMH version: 1.34
+# VM version: JDK 11.0.14, OpenJDK 64-Bit Server VM, 11.0.14+9-post-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Serialization.dsljson
+
+# Run progress: 0.00% complete, ETA 00:13:20
+# Fork: 1 of 2
+OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
+# Warmup Iteration   1: 356.478 ops/s
+# Warmup Iteration   2: 369.760 ops/s
+# Warmup Iteration   3: 345.405 ops/s
+# Warmup Iteration   4: 345.577 ops/s
+# Warmup Iteration   5: 373.833 ops/s
+Iteration   1: 381.442 ops/s
+Iteration   2: 382.279 ops/s
+Iteration   3: 384.883 ops/s
+Iteration   4: 386.286 ops/s
+Iteration   5: 383.225 ops/s
+Iteration   6: 383.234 ops/s
+Iteration   7: 381.365 ops/s
+Iteration   8: 382.363 ops/s
+Iteration   9: 382.717 ops/s
+Iteration  10: 381.657 ops/s
+
+# Run progress: 10.00% complete, ETA 00:12:25
+# Fork: 2 of 2
+OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
+# Warmup Iteration   1: 376.245 ops/s
+# Warmup Iteration   2: 367.572 ops/s
+# Warmup Iteration   3: 373.022 ops/s
+# Warmup Iteration   4: 381.811 ops/s
+# Warmup Iteration   5: 382.056 ops/s
+Iteration   1: 383.886 ops/s
+Iteration   2: 384.123 ops/s
+Iteration   3: 384.285 ops/s
+Iteration   4: 369.793 ops/s
+Iteration   5: 367.116 ops/s
+Iteration   6: 376.527 ops/s
+Iteration   7: 352.034 ops/s
+Iteration   8: 337.544 ops/s
+Iteration   9: 362.219 ops/s
+Iteration  10: 356.177 ops/s
+
+
+Result "com.meylism.databind.Serialization.dsljson":
+  375.158 ?(99.9%) 11.686 ops/s [Average]
+  (min, avg, max) = (337.544, 375.158, 386.286), stdev = 13.458
+  CI (99.9%): [363.472, 386.844] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 11.0.14, OpenJDK 64-Bit Server VM, 11.0.14+9-post-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Serialization.dsljson_reflection
+
+# Run progress: 20.00% complete, ETA 00:11:02
+# Fork: 1 of 2
+OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
+# Warmup Iteration   1: 352.942 ops/s
+# Warmup Iteration   2: 383.644 ops/s
+# Warmup Iteration   3: 384.369 ops/s
+# Warmup Iteration   4: 384.024 ops/s
+# Warmup Iteration   5: 382.948 ops/s
+Iteration   1: 331.154 ops/s
+Iteration   2: 338.886 ops/s
+Iteration   3: 343.372 ops/s
+Iteration   4: 369.759 ops/s
+Iteration   5: 381.459 ops/s
+Iteration   6: 384.279 ops/s
+Iteration   7: 363.465 ops/s
+Iteration   8: 359.838 ops/s
+Iteration   9: 344.937 ops/s
+Iteration  10: 365.704 ops/s
+
+# Run progress: 30.00% complete, ETA 00:09:40
+# Fork: 2 of 2
+OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
+# Warmup Iteration   1: 356.846 ops/s
+# Warmup Iteration   2: 369.123 ops/s
+# Warmup Iteration   3: 349.461 ops/s
+# Warmup Iteration   4: 361.842 ops/s
+# Warmup Iteration   5: 355.231 ops/s
+Iteration   1: 370.862 ops/s
+Iteration   2: 364.050 ops/s
+Iteration   3: 341.470 ops/s
+Iteration   4: 351.318 ops/s
+Iteration   5: 376.503 ops/s
+Iteration   6: 371.754 ops/s
+Iteration   7: 350.754 ops/s
+Iteration   8: 360.457 ops/s
+Iteration   9: 367.791 ops/s
+Iteration  10: 380.944 ops/s
+
+
+Result "com.meylism.databind.Serialization.dsljson_reflection":
+  360.938 ?(99.9%) 13.367 ops/s [Average]
+  (min, avg, max) = (331.154, 360.938, 384.279), stdev = 15.393
+  CI (99.9%): [347.571, 374.305] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 11.0.14, OpenJDK 64-Bit Server VM, 11.0.14+9-post-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Serialization.gson
+
+# Run progress: 40.00% complete, ETA 00:08:17
+# Fork: 1 of 2
+OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
+# Warmup Iteration   1: 713.293 ops/s
+# Warmup Iteration   2: 712.642 ops/s
+# Warmup Iteration   3: 765.103 ops/s
+# Warmup Iteration   4: 755.119 ops/s
+# Warmup Iteration   5: 745.623 ops/s
+Iteration   1: 797.800 ops/s
+Iteration   2: 811.427 ops/s
+Iteration   3: 813.448 ops/s
+Iteration   4: 809.017 ops/s
+Iteration   5: 748.148 ops/s
+Iteration   6: 770.333 ops/s
+Iteration   7: 813.109 ops/s
+Iteration   8: 785.805 ops/s
+Iteration   9: 734.685 ops/s
+Iteration  10: 718.015 ops/s
+
+# Run progress: 50.00% complete, ETA 00:06:53
+# Fork: 2 of 2
+OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
+# Warmup Iteration   1: 626.306 ops/s
+# Warmup Iteration   2: 663.888 ops/s
+# Warmup Iteration   3: 673.092 ops/s
+# Warmup Iteration   4: 722.755 ops/s
+# Warmup Iteration   5: 689.822 ops/s
+Iteration   1: 648.672 ops/s
+Iteration   2: 689.725 ops/s
+Iteration   3: 668.542 ops/s
+Iteration   4: 693.938 ops/s
+Iteration   5: 740.991 ops/s
+Iteration   6: 740.970 ops/s
+Iteration   7: 742.922 ops/s
+Iteration   8: 720.849 ops/s
+Iteration   9: 697.715 ops/s
+Iteration  10: 704.228 ops/s
+
+
+Result "com.meylism.databind.Serialization.gson":
+  742.517 ?(99.9%) 44.078 ops/s [Average]
+  (min, avg, max) = (648.672, 742.517, 813.448), stdev = 50.761
+  CI (99.9%): [698.439, 786.595] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 11.0.14, OpenJDK 64-Bit Server VM, 11.0.14+9-post-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Serialization.jackson
+
+# Run progress: 60.00% complete, ETA 00:05:30
+# Fork: 1 of 2
+OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
+# Warmup Iteration   1: 358.864 ops/s
+# Warmup Iteration   2: 356.345 ops/s
+# Warmup Iteration   3: 353.396 ops/s
+# Warmup Iteration   4: 377.018 ops/s
+# Warmup Iteration   5: 355.605 ops/s
+Iteration   1: 371.915 ops/s
+Iteration   2: 379.079 ops/s
+Iteration   3: 375.902 ops/s
+Iteration   4: 379.457 ops/s
+Iteration   5: 378.325 ops/s
+Iteration   6: 368.108 ops/s
+Iteration   7: 341.817 ops/s
+Iteration   8: 344.541 ops/s
+Iteration   9: 341.327 ops/s
+Iteration  10: 354.372 ops/s
+
+# Run progress: 70.00% complete, ETA 00:04:08
+# Fork: 2 of 2
+OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
+# Warmup Iteration   1: 300.634 ops/s
+# Warmup Iteration   2: 292.940 ops/s
+# Warmup Iteration   3: 299.234 ops/s
+# Warmup Iteration   4: 307.282 ops/s
+# Warmup Iteration   5: 316.153 ops/s
+Iteration   1: 324.084 ops/s
+Iteration   2: 319.927 ops/s
+Iteration   3: 298.828 ops/s
+Iteration   4: 303.589 ops/s
+Iteration   5: 297.239 ops/s
+Iteration   6: 318.004 ops/s
+Iteration   7: 308.886 ops/s
+Iteration   8: 308.995 ops/s
+Iteration   9: 290.054 ops/s
+Iteration  10: 287.873 ops/s
+
+
+Result "com.meylism.databind.Serialization.jackson":
+  334.616 ?(99.9%) 28.477 ops/s [Average]
+  (min, avg, max) = (287.873, 334.616, 379.457), stdev = 32.794
+  CI (99.9%): [306.139, 363.093] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 11.0.14, OpenJDK 64-Bit Server VM, 11.0.14+9-post-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Serialization.jackson_afterburner
+
+# Run progress: 80.00% complete, ETA 00:02:45
+# Fork: 1 of 2
+OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.fasterxml.jackson.module.afterburner.util.MyClassLoader (file:/root/java-json-parser-benchmark/target/benchmark-with-dependencies.jar) to method java.lang.ClassLoader.findLoadedClass(java.lang.String)
+WARNING: Please consider reporting this to the maintainers of com.fasterxml.jackson.module.afterburner.util.MyClassLoader
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+345.550 ops/s
+# Warmup Iteration   2: 364.425 ops/s
+# Warmup Iteration   3: 370.870 ops/s
+# Warmup Iteration   4: 335.096 ops/s
+# Warmup Iteration   5: 351.536 ops/s
+Iteration   1: 352.815 ops/s
+Iteration   2: 342.054 ops/s
+Iteration   3: 335.961 ops/s
+Iteration   4: 349.944 ops/s
+Iteration   5: 348.909 ops/s
+Iteration   6: 356.188 ops/s
+Iteration   7: 355.790 ops/s
+Iteration   8: 353.301 ops/s
+Iteration   9: 359.587 ops/s
+Iteration  10: 371.884 ops/s
+
+# Run progress: 90.00% complete, ETA 00:01:22
+# Fork: 2 of 2
+OpenJDK 64-Bit Server VM warning: Option AggressiveOpts was deprecated in version 11.0 and will likely be removed in a future release.
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.fasterxml.jackson.module.afterburner.util.MyClassLoader (file:/root/java-json-parser-benchmark/target/benchmark-with-dependencies.jar) to method java.lang.ClassLoader.findLoadedClass(java.lang.String)
+WARNING: Please consider reporting this to the maintainers of com.fasterxml.jackson.module.afterburner.util.MyClassLoader
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+330.349 ops/s
+# Warmup Iteration   2: 326.867 ops/s
+# Warmup Iteration   3: 334.865 ops/s
+# Warmup Iteration   4: 322.526 ops/s
+# Warmup Iteration   5: 333.202 ops/s
+Iteration   1: 338.059 ops/s
+Iteration   2: 339.066 ops/s
+Iteration   3: 348.035 ops/s
+Iteration   4: 332.628 ops/s
+Iteration   5: 338.655 ops/s
+Iteration   6: 327.454 ops/s
+Iteration   7: 333.369 ops/s
+Iteration   8: 326.496 ops/s
+Iteration   9: 318.857 ops/s
+Iteration  10: 322.070 ops/s
+
+
+Result "com.meylism.databind.Serialization.jackson_afterburner":
+  342.556 ?(99.9%) 11.950 ops/s [Average]
+  (min, avg, max) = (318.857, 342.556, 371.884), stdev = 13.762
+  CI (99.9%): [330.606, 354.506] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:13:48
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                           Mode  Cnt    Score    Error  Units
+Serialization.dsljson              thrpt   20  375.158 ? 11.686  ops/s
+Serialization.dsljson_reflection   thrpt   20  360.938 ? 13.367  ops/s
+Serialization.gson                 thrpt   20  742.517 ? 44.078  ops/s
+Serialization.jackson              thrpt   20  334.616 ? 28.477  ops/s
+Serialization.jackson_afterburner  thrpt   20  342.556 ? 11.950  ops/s
