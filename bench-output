@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-DATA_TYPES="integers floats strings non_ascii_strings"
+DATA_TYPES="booleans"
 NUMBERS="1"
 SIZES="1 100"
 COMMANDS="ser deser"
