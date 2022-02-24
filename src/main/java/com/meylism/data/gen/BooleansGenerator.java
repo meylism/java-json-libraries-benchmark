@@ -15,20 +15,17 @@ public class BooleansGenerator implements DataGenerator<Booleans> {
         int approxSize = 15; // size of {'booleans':[]}
 
         obj.booleans = new ArrayList<>();
-        while (approxSize < size) {
-            approxSize += appendBoolean(obj, size - approxSize);
-            approxSize += 1; // size of ,
-        }
+        approxSize += appendBooleans(obj, size - approxSize);
         return approxSize;
     }
 
-    private static int appendBoolean(final Booleans booleans, final int availableSize) {
+    private static int appendBooleans(final Booleans booleans, final int availableSize) {
         int expectedSize = 0;
         Boolean random;
         while (expectedSize < availableSize) {
             random = RandomUtils.nextBoolean();
             booleans.booleans.add(random);
-            expectedSize += 1 + Boolean.toString(random).length(); // size of ',' and float
+            expectedSize += 1 + Boolean.toString(random).length(); // size of ',' and boolean
         }
         return expectedSize;
     }

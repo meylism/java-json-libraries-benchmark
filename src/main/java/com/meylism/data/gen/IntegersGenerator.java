@@ -12,10 +12,8 @@ public class IntegersGenerator implements DataGenerator<Integers> {
         int approxSize = 15; // size of {'integers':[]}
 
         obj.integers = new ArrayList<>();
-        while (approxSize < size) {
-            approxSize += appendInteger(obj, size - approxSize);
-            approxSize += 1; // size of ,
-        }
+        approxSize += appendInteger(obj, size - approxSize);
+
         return approxSize;
     }
 

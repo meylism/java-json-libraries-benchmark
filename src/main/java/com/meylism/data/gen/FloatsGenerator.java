@@ -12,14 +12,12 @@ public class FloatsGenerator implements DataGenerator<Floats> {
         int approxSize = 13; // size of {'floats':[]}
 
         obj.floats = new ArrayList<>();
-        while (approxSize < size) {
-            approxSize += appendFloat(obj, size - approxSize);
-            approxSize += 1; // size of ,
-        }
+        approxSize += appendFloats(obj, size - approxSize);
+
         return approxSize;
     }
 
-    private static int appendFloat(final Floats floats, final int availableSize) {
+    private static int appendFloats(final Floats floats, final int availableSize) {
         int expectedSize = 0;
         Float random;
 

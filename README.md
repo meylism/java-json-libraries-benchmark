@@ -23,14 +23,14 @@ JMH info:
 
 ```
 # JMH version: 1.34
-# VM version: JDK 11.0.14, OpenJDK 64-Bit Server VM, 11.0.14+9-post-Debian-1deb11u1
-# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
-# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
-# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 5 iterations, 10 s each
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /root/jdk-17.0.2/bin/java
+# VM options: -Xms2g -Xmx5g
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 5 s each
 # Measurement: 10 iterations, 3 s each
 # Timeout: 10 min per iteration
-# Threads: 16 threads, will synchronize iterations
+# Threads: 4 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 ```
 
@@ -39,17 +39,17 @@ JMH info:
 - `mvn package` - build and create a JAR
 - `./bench` - run individual benchmarks using selected payload sizes and libraries. Usage:
   ```
-    usage: bench [ -f <forks> ] [ -i <measurementIterations> ]
-      [ -m <measurementTime> ] [ -t <threads> ] [ -wi <warmupIterations> ]
-      <command> [ <args> ]
-    
-    Commands are:
-    deser   Runs the deserialization benchmarks
-    help    Display help information
-    info
-    ser     Runs the serialization benchmarks
-    
-    See 'bench help <command>' for more information on a specific command.
+  usage: bench [ -f <forks> ] [ -i <measurementIterations> ]
+  [ -m <measurementTime> ] [ -t <threads> ] [ -wi <warmupIterations> ]
+  [ -wt <warmupTime> ] <command> [ <args> ]
+  
+  Commands are:
+  deser   Runs the deserialization benchmarks
+  help    Display help information
+  info
+  ser     Runs the serialization benchmarks
+  
+  See 'bench help <command>' for more information on a specific command.
   ```
 - `./bench-output` - run benchmarks using the parameters provided in the script and publish the 
   results to the `output` directory
