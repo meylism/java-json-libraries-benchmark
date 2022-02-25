@@ -1,0 +1,1 @@
+{"mode":"Serialization","forks":2,"warmupIterations":5,"warmupTime":10,"measurementIterations":10,"measurementTime":3,"threads":16,"libraries":"","apis":"","numberOfPayloads":1,"sizeOfEachPayloadInKb":100000,"dataType":"floats"}

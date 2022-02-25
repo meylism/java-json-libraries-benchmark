@@ -2,7 +2,7 @@
 
 JAR=target/benchmark-with-dependencies.jar
 HEAP_SIZE=2g
-HEAP_SIZE_MAX=5g
+HEAP_SIZE_MAX=8g
 
 [ -z ${JVM_OPTIONS} ] && JVM_OPTIONS="-server -Xms${HEAP_SIZE} -Xmx${HEAP_SIZE_MAX}"
 [ -z ${SEED} ] && export SEED=${RANDOM}
