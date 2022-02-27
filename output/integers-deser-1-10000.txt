@@ -12,45 +12,45 @@
 
 # Run progress: 0.00% complete, ETA 00:13:20
 # Fork: 1 of 2
-# Warmup Iteration   1: 178.566 ops/s
-# Warmup Iteration   2: 268.594 ops/s
-# Warmup Iteration   3: 270.653 ops/s
-# Warmup Iteration   4: 262.305 ops/s
-# Warmup Iteration   5: 260.943 ops/s
-Iteration   1: 258.804 ops/s
-Iteration   2: 267.778 ops/s
-Iteration   3: 268.635 ops/s
-Iteration   4: 270.858 ops/s
-Iteration   5: 274.590 ops/s
-Iteration   6: 269.812 ops/s
-Iteration   7: 276.434 ops/s
-Iteration   8: 271.406 ops/s
-Iteration   9: 278.899 ops/s
-Iteration  10: 262.200 ops/s
+# Warmup Iteration   1: 243.594 ops/s
+# Warmup Iteration   2: 265.688 ops/s
+# Warmup Iteration   3: 253.267 ops/s
+# Warmup Iteration   4: 265.660 ops/s
+# Warmup Iteration   5: 254.573 ops/s
+Iteration   1: 266.677 ops/s
+Iteration   2: 264.474 ops/s
+Iteration   3: 247.728 ops/s
+Iteration   4: 245.432 ops/s
+Iteration   5: 258.875 ops/s
+Iteration   6: 268.139 ops/s
+Iteration   7: 256.463 ops/s
+Iteration   8: 266.023 ops/s
+Iteration   9: 260.271 ops/s
+Iteration  10: 275.107 ops/s
 
-# Run progress: 10.00% complete, ETA 00:12:29
+# Run progress: 10.00% complete, ETA 00:12:27
 # Fork: 2 of 2
-# Warmup Iteration   1: 177.543 ops/s
-# Warmup Iteration   2: 279.225 ops/s
-# Warmup Iteration   3: 276.402 ops/s
-# Warmup Iteration   4: 272.870 ops/s
-# Warmup Iteration   5: 276.652 ops/s
-Iteration   1: 274.861 ops/s
-Iteration   2: 279.698 ops/s
-Iteration   3: 274.210 ops/s
-Iteration   4: 280.518 ops/s
-Iteration   5: 279.685 ops/s
-Iteration   6: 272.256 ops/s
-Iteration   7: 274.758 ops/s
-Iteration   8: 287.027 ops/s
-Iteration   9: 261.695 ops/s
-Iteration  10: 287.243 ops/s
+# Warmup Iteration   1: 240.399 ops/s
+# Warmup Iteration   2: 257.959 ops/s
+# Warmup Iteration   3: 255.272 ops/s
+# Warmup Iteration   4: 259.179 ops/s
+# Warmup Iteration   5: 255.953 ops/s
+Iteration   1: 254.606 ops/s
+Iteration   2: 256.220 ops/s
+Iteration   3: 257.949 ops/s
+Iteration   4: 267.640 ops/s
+Iteration   5: 254.651 ops/s
+Iteration   6: 257.682 ops/s
+Iteration   7: 263.699 ops/s
+Iteration   8: 256.818 ops/s
+Iteration   9: 253.888 ops/s
+Iteration  10: 265.300 ops/s
 
 
 Result "com.meylism.databind.Deserialization.dsljson":
-  273.568 ?(99.9%) 6.627 ops/s [Average]
-  (min, avg, max) = (258.804, 273.568, 287.243), stdev = 7.631
-  CI (99.9%): [266.942, 280.195] (assumes normal distribution)
+  259.882 ?(99.9%) 6.303 ops/s [Average]
+  (min, avg, max) = (245.432, 259.882, 275.107), stdev = 7.258
+  CI (99.9%): [253.579, 266.185] (assumes normal distribution)
 
 
 # JMH version: 1.34
@@ -65,47 +65,47 @@ Result "com.meylism.databind.Deserialization.dsljson":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Deserialization.dsljson_reflection
 
-# Run progress: 20.00% complete, ETA 00:11:06
+# Run progress: 20.00% complete, ETA 00:11:04
 # Fork: 1 of 2
-# Warmup Iteration   1: 250.924 ops/s
-# Warmup Iteration   2: 275.623 ops/s
-# Warmup Iteration   3: 270.725 ops/s
-# Warmup Iteration   4: 268.857 ops/s
-# Warmup Iteration   5: 274.429 ops/s
-Iteration   1: 268.295 ops/s
-Iteration   2: 275.799 ops/s
-Iteration   3: 277.588 ops/s
-Iteration   4: 276.301 ops/s
-Iteration   5: 277.466 ops/s
-Iteration   6: 272.117 ops/s
-Iteration   7: 269.127 ops/s
-Iteration   8: 253.898 ops/s
-Iteration   9: 264.275 ops/s
-Iteration  10: 278.406 ops/s
+# Warmup Iteration   1: 178.469 ops/s
+# Warmup Iteration   2: 268.147 ops/s
+# Warmup Iteration   3: 273.202 ops/s
+# Warmup Iteration   4: 271.765 ops/s
+# Warmup Iteration   5: 270.354 ops/s
+Iteration   1: 273.007 ops/s
+Iteration   2: 276.390 ops/s
+Iteration   3: 291.951 ops/s
+Iteration   4: 286.995 ops/s
+Iteration   5: 284.476 ops/s
+Iteration   6: 271.548 ops/s
+Iteration   7: 276.152 ops/s
+Iteration   8: 283.529 ops/s
+Iteration   9: 287.485 ops/s
+Iteration  10: 290.754 ops/s
 
-# Run progress: 30.00% complete, ETA 00:09:43
+# Run progress: 30.00% complete, ETA 00:09:41
 # Fork: 2 of 2
-# Warmup Iteration   1: 233.207 ops/s
-# Warmup Iteration   2: 259.369 ops/s
-# Warmup Iteration   3: 245.777 ops/s
-# Warmup Iteration   4: 258.566 ops/s
-# Warmup Iteration   5: 259.328 ops/s
-Iteration   1: 257.558 ops/s
-Iteration   2: 265.488 ops/s
-Iteration   3: 262.631 ops/s
-Iteration   4: 253.174 ops/s
-Iteration   5: 249.495 ops/s
-Iteration   6: 252.838 ops/s
-Iteration   7: 253.900 ops/s
-Iteration   8: 256.189 ops/s
-Iteration   9: 265.917 ops/s
-Iteration  10: 264.233 ops/s
+# Warmup Iteration   1: 175.411 ops/s
+# Warmup Iteration   2: 274.432 ops/s
+# Warmup Iteration   3: 282.452 ops/s
+# Warmup Iteration   4: 272.436 ops/s
+# Warmup Iteration   5: 281.890 ops/s
+Iteration   1: 273.096 ops/s
+Iteration   2: 295.003 ops/s
+Iteration   3: 290.823 ops/s
+Iteration   4: 288.759 ops/s
+Iteration   5: 282.498 ops/s
+Iteration   6: 266.272 ops/s
+Iteration   7: 300.077 ops/s
+Iteration   8: 297.872 ops/s
+Iteration   9: 289.343 ops/s
+Iteration  10: 292.469 ops/s
 
 
 Result "com.meylism.databind.Deserialization.dsljson_reflection":
-  264.735 ?(99.9%) 8.287 ops/s [Average]
-  (min, avg, max) = (249.495, 264.735, 278.406), stdev = 9.544
-  CI (99.9%): [256.448, 273.022] (assumes normal distribution)
+  284.925 ?(99.9%) 8.179 ops/s [Average]
+  (min, avg, max) = (266.272, 284.925, 300.077), stdev = 9.419
+  CI (99.9%): [276.746, 293.104] (assumes normal distribution)
 
 
 # JMH version: 1.34
@@ -120,47 +120,47 @@ Result "com.meylism.databind.Deserialization.dsljson_reflection":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Deserialization.gson
 
-# Run progress: 40.00% complete, ETA 00:08:19
+# Run progress: 40.00% complete, ETA 00:08:18
 # Fork: 1 of 2
-# Warmup Iteration   1: 81.638 ops/s
-# Warmup Iteration   2: 107.838 ops/s
-# Warmup Iteration   3: 113.196 ops/s
-# Warmup Iteration   4: 116.294 ops/s
-# Warmup Iteration   5: 118.171 ops/s
-Iteration   1: 114.067 ops/s
-Iteration   2: 113.906 ops/s
-Iteration   3: 113.485 ops/s
-Iteration   4: 115.119 ops/s
-Iteration   5: 113.509 ops/s
-Iteration   6: 117.874 ops/s
-Iteration   7: 116.836 ops/s
-Iteration   8: 116.549 ops/s
-Iteration   9: 115.668 ops/s
-Iteration  10: 117.992 ops/s
+# Warmup Iteration   1: 80.749 ops/s
+# Warmup Iteration   2: 113.287 ops/s
+# Warmup Iteration   3: 117.779 ops/s
+# Warmup Iteration   4: 117.803 ops/s
+# Warmup Iteration   5: 116.978 ops/s
+Iteration   1: 117.181 ops/s
+Iteration   2: 118.281 ops/s
+Iteration   3: 123.908 ops/s
+Iteration   4: 120.107 ops/s
+Iteration   5: 119.483 ops/s
+Iteration   6: 120.363 ops/s
+Iteration   7: 122.209 ops/s
+Iteration   8: 120.305 ops/s
+Iteration   9: 118.074 ops/s
+Iteration  10: 116.143 ops/s
 
-# Run progress: 50.00% complete, ETA 00:06:58
+# Run progress: 50.00% complete, ETA 00:06:57
 # Fork: 2 of 2
-# Warmup Iteration   1: 75.704 ops/s
-# Warmup Iteration   2: 106.043 ops/s
-# Warmup Iteration   3: 107.250 ops/s
-# Warmup Iteration   4: 108.152 ops/s
-# Warmup Iteration   5: 109.654 ops/s
-Iteration   1: 110.402 ops/s
-Iteration   2: 109.142 ops/s
-Iteration   3: 104.475 ops/s
-Iteration   4: 105.609 ops/s
-Iteration   5: 112.139 ops/s
-Iteration   6: 105.059 ops/s
-Iteration   7: 110.529 ops/s
-Iteration   8: 101.727 ops/s
-Iteration   9: 107.956 ops/s
-Iteration  10: 107.566 ops/s
+# Warmup Iteration   1: 71.535 ops/s
+# Warmup Iteration   2: 107.223 ops/s
+# Warmup Iteration   3: 104.505 ops/s
+# Warmup Iteration   4: 107.944 ops/s
+# Warmup Iteration   5: 108.740 ops/s
+Iteration   1: 108.335 ops/s
+Iteration   2: 109.047 ops/s
+Iteration   3: 107.982 ops/s
+Iteration   4: 104.053 ops/s
+Iteration   5: 109.356 ops/s
+Iteration   6: 97.815 ops/s
+Iteration   7: 104.372 ops/s
+Iteration   8: 112.337 ops/s
+Iteration   9: 105.712 ops/s
+Iteration  10: 105.966 ops/s
 
 
 Result "com.meylism.databind.Deserialization.gson":
-  111.480 ?(99.9%) 4.201 ops/s [Average]
-  (min, avg, max) = (101.727, 111.480, 117.992), stdev = 4.838
-  CI (99.9%): [107.279, 115.682] (assumes normal distribution)
+  113.051 ?(99.9%) 6.452 ops/s [Average]
+  (min, avg, max) = (97.815, 113.051, 123.908), stdev = 7.430
+  CI (99.9%): [106.600, 119.503] (assumes normal distribution)
 
 
 # JMH version: 1.34
@@ -175,47 +175,47 @@ Result "com.meylism.databind.Deserialization.gson":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Deserialization.jackson
 
-# Run progress: 60.00% complete, ETA 00:05:36
+# Run progress: 60.00% complete, ETA 00:05:35
 # Fork: 1 of 2
-# Warmup Iteration   1: 136.788 ops/s
-# Warmup Iteration   2: 190.338 ops/s
-# Warmup Iteration   3: 193.476 ops/s
-# Warmup Iteration   4: 178.815 ops/s
-# Warmup Iteration   5: 179.798 ops/s
-Iteration   1: 192.415 ops/s
-Iteration   2: 190.625 ops/s
-Iteration   3: 192.261 ops/s
-Iteration   4: 195.143 ops/s
-Iteration   5: 178.668 ops/s
-Iteration   6: 187.808 ops/s
-Iteration   7: 186.511 ops/s
-Iteration   8: 194.728 ops/s
-Iteration   9: 192.330 ops/s
-Iteration  10: 186.085 ops/s
+# Warmup Iteration   1: 131.717 ops/s
+# Warmup Iteration   2: 193.132 ops/s
+# Warmup Iteration   3: 188.973 ops/s
+# Warmup Iteration   4: 183.474 ops/s
+# Warmup Iteration   5: 181.771 ops/s
+Iteration   1: 184.065 ops/s
+Iteration   2: 187.996 ops/s
+Iteration   3: 203.632 ops/s
+Iteration   4: 193.099 ops/s
+Iteration   5: 188.744 ops/s
+Iteration   6: 192.634 ops/s
+Iteration   7: 189.761 ops/s
+Iteration   8: 186.064 ops/s
+Iteration   9: 196.141 ops/s
+Iteration  10: 199.470 ops/s
 
 # Run progress: 70.00% complete, ETA 00:04:12
 # Fork: 2 of 2
-# Warmup Iteration   1: 181.647 ops/s
-# Warmup Iteration   2: 193.942 ops/s
-# Warmup Iteration   3: 181.956 ops/s
-# Warmup Iteration   4: 176.055 ops/s
-# Warmup Iteration   5: 183.079 ops/s
-Iteration   1: 190.343 ops/s
-Iteration   2: 174.721 ops/s
-Iteration   3: 187.929 ops/s
-Iteration   4: 168.838 ops/s
-Iteration   5: 187.929 ops/s
-Iteration   6: 187.228 ops/s
-Iteration   7: 183.788 ops/s
-Iteration   8: 193.903 ops/s
-Iteration   9: 194.054 ops/s
-Iteration  10: 171.694 ops/s
+# Warmup Iteration   1: 155.848 ops/s
+# Warmup Iteration   2: 165.344 ops/s
+# Warmup Iteration   3: 170.233 ops/s
+# Warmup Iteration   4: 161.134 ops/s
+# Warmup Iteration   5: 164.349 ops/s
+Iteration   1: 169.177 ops/s
+Iteration   2: 167.093 ops/s
+Iteration   3: 145.792 ops/s
+Iteration   4: 165.008 ops/s
+Iteration   5: 165.865 ops/s
+Iteration   6: 153.727 ops/s
+Iteration   7: 150.083 ops/s
+Iteration   8: 171.856 ops/s
+Iteration   9: 160.355 ops/s
+Iteration  10: 147.987 ops/s
 
 
 Result "com.meylism.databind.Deserialization.jackson":
-  186.850 ?(99.9%) 6.699 ops/s [Average]
-  (min, avg, max) = (168.838, 186.850, 195.143), stdev = 7.715
-  CI (99.9%): [180.151, 193.549] (assumes normal distribution)
+  175.927 ?(99.9%) 15.971 ops/s [Average]
+  (min, avg, max) = (145.792, 175.927, 203.632), stdev = 18.392
+  CI (99.9%): [159.956, 191.899] (assumes normal distribution)
 
 
 # JMH version: 1.34
@@ -232,48 +232,48 @@ Result "com.meylism.databind.Deserialization.jackson":
 
 # Run progress: 80.00% complete, ETA 00:02:48
 # Fork: 1 of 2
-# Warmup Iteration   1: 128.573 ops/s
-# Warmup Iteration   2: 176.046 ops/s
-# Warmup Iteration   3: 183.523 ops/s
-# Warmup Iteration   4: 174.363 ops/s
-# Warmup Iteration   5: 175.379 ops/s
-Iteration   1: 171.203 ops/s
-Iteration   2: 186.590 ops/s
-Iteration   3: 166.531 ops/s
-Iteration   4: 193.203 ops/s
-Iteration   5: 197.205 ops/s
-Iteration   6: 190.794 ops/s
-Iteration   7: 195.217 ops/s
-Iteration   8: 196.747 ops/s
-Iteration   9: 194.581 ops/s
-Iteration  10: 197.337 ops/s
+# Warmup Iteration   1: 130.355 ops/s
+# Warmup Iteration   2: 177.090 ops/s
+# Warmup Iteration   3: 180.180 ops/s
+# Warmup Iteration   4: 169.782 ops/s
+# Warmup Iteration   5: 175.481 ops/s
+Iteration   1: 172.092 ops/s
+Iteration   2: 185.308 ops/s
+Iteration   3: 165.739 ops/s
+Iteration   4: 172.529 ops/s
+Iteration   5: 180.528 ops/s
+Iteration   6: 183.759 ops/s
+Iteration   7: 188.621 ops/s
+Iteration   8: 180.162 ops/s
+Iteration   9: 195.814 ops/s
+Iteration  10: 176.578 ops/s
 
 # Run progress: 90.00% complete, ETA 00:01:24
 # Fork: 2 of 2
-# Warmup Iteration   1: 128.220 ops/s
-# Warmup Iteration   2: 169.971 ops/s
-# Warmup Iteration   3: 180.108 ops/s
-# Warmup Iteration   4: 174.339 ops/s
-# Warmup Iteration   5: 171.647 ops/s
-Iteration   1: 171.548 ops/s
-Iteration   2: 170.334 ops/s
-Iteration   3: 156.762 ops/s
-Iteration   4: 189.489 ops/s
-Iteration   5: 182.315 ops/s
-Iteration   6: 169.579 ops/s
-Iteration   7: 172.930 ops/s
-Iteration   8: 190.815 ops/s
-Iteration   9: 172.414 ops/s
-Iteration  10: 179.628 ops/s
+# Warmup Iteration   1: 115.899 ops/s
+# Warmup Iteration   2: 172.071 ops/s
+# Warmup Iteration   3: 189.027 ops/s
+# Warmup Iteration   4: 178.389 ops/s
+# Warmup Iteration   5: 170.075 ops/s
+Iteration   1: 170.613 ops/s
+Iteration   2: 174.206 ops/s
+Iteration   3: 174.637 ops/s
+Iteration   4: 173.396 ops/s
+Iteration   5: 180.903 ops/s
+Iteration   6: 189.222 ops/s
+Iteration   7: 194.483 ops/s
+Iteration   8: 167.737 ops/s
+Iteration   9: 190.193 ops/s
+Iteration  10: 180.128 ops/s
 
 
 Result "com.meylism.databind.Deserialization.jackson_afterburner":
-  182.261 ?(99.9%) 10.812 ops/s [Average]
-  (min, avg, max) = (156.762, 182.261, 197.337), stdev = 12.451
-  CI (99.9%): [171.449, 193.073] (assumes normal distribution)
+  179.832 ?(99.9%) 7.570 ops/s [Average]
+  (min, avg, max) = (165.739, 179.832, 195.814), stdev = 8.717
+  CI (99.9%): [172.263, 187.402] (assumes normal distribution)
 
 
-# Run complete. Total time: 00:14:01
+# Run complete. Total time: 00:14:02
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -282,8 +282,8 @@ the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from th
 Do not assume the numbers tell you what you want them to tell.
 
 Benchmark                             Mode  Cnt    Score    Error  Units
-Deserialization.dsljson              thrpt   20  273.568 ?  6.627  ops/s
-Deserialization.dsljson_reflection   thrpt   20  264.735 ?  8.287  ops/s
-Deserialization.gson                 thrpt   20  111.480 ?  4.201  ops/s
-Deserialization.jackson              thrpt   20  186.850 ?  6.699  ops/s
-Deserialization.jackson_afterburner  thrpt   20  182.261 ? 10.812  ops/s
+Deserialization.dsljson              thrpt   20  259.882 ?  6.303  ops/s
+Deserialization.dsljson_reflection   thrpt   20  284.925 ?  8.179  ops/s
+Deserialization.gson                 thrpt   20  113.051 ?  6.452  ops/s
+Deserialization.jackson              thrpt   20  175.927 ? 15.971  ops/s
+Deserialization.jackson_afterburner  thrpt   20  179.832 ?  7.570  ops/s
