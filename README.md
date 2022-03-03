@@ -9,11 +9,11 @@ test each data type individually using payloads of different sizes. Benchmarked 
 
 Libraries used in the last set of benchmarks:
 
-| Library | Version |
-|:------|:------|
-|jackson|2.13.1| 
-|gson|2.8.9|
-|dsl-json|1.9.9| 
+| Library  | Version |
+|:---------|:--------|
+| jackson  | 2.13.1  | 
+| gson     | 2.9.0   |
+| dsl-json | 1.9.9   | 
 
 ### Benchmark Environment
 
