@@ -10,7 +10,6 @@ public enum Library {
     JACKSON_AFTERBURNER,
     DSLJSON,
     DSLJSON_REFLECTION;
-    // JSONITER;
 
     public static Set<Library> fromCsv(String str) {
         if (str == null || str.trim().isEmpty()) {

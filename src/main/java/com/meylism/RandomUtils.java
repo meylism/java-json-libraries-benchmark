@@ -46,6 +46,11 @@ public final class RandomUtils {
         return random(count, true, true);
     }
 
+    public static String randomAlphabetic(final int startInclusive, final int endExclusive) {
+        int randomInt = nextInt(startInclusive, endExclusive);
+        return randomAlphabetic(randomInt);
+    }
+
     public static String randomNumeric(final int count) {
         return random(count, false, true);
     }

@@ -25,6 +25,8 @@ public final class JsonSourceFactory {
                 return new NonAsciiStringsSource(quantity, size);
             case BOOLEANS:
                 return new BooleansSource(quantity, size);
+            case COMPLEX:
+                return new ComplexSource(quantity, size);
             default:
                 throw new RuntimeException();
         }
