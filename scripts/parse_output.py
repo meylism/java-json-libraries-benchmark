@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import csv
 import os
 import re
@@ -32,7 +30,7 @@ def extractScores(f):
                     # error = 0
                     # if (len(values) > 7):
                     #    error = values[5]
-                    score = values[3]
+                    score = values[3] + values[4] + values[5]
                     result[name] = score
             elif l.startswith('Benchmark'):
                 benchmark = True
@@ -68,7 +66,10 @@ for filename, v in sheets.items():
             fieldname = "{}kb (x{})".format(size, size)
             if fieldname not in fieldnames:
                 fieldnames.append(fieldname)
-            row[fieldname] = float(score) * int(size)
+            score_details = score.split('±')
+            score_pure = score_details[0]
+            score_error = score_details[1]
+            row[fieldname] = str(float(score_pure) * int(size)) + "±" + str(float(score_error) * int(size))
         rows.append(row)
 
     if not os.path.exists('csv/'):

@@ -1,0 +1,319 @@
+# JMH version: 1.34
+# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+# VM invoker: /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/jre/bin/java
+# VM options: -Xms2g -Xmx5g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 8 iterations, 15 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Serialization.dsljson
+
+# Run progress: 0.00% complete, ETA 00:25:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 322424.629 ops/s
+# Warmup Iteration   2: 326534.396 ops/s
+# Warmup Iteration   3: 325660.383 ops/s
+# Warmup Iteration   4: 324193.514 ops/s
+# Warmup Iteration   5: 326473.330 ops/s
+# Warmup Iteration   6: 324539.490 ops/s
+# Warmup Iteration   7: 324285.876 ops/s
+# Warmup Iteration   8: 325809.227 ops/s
+Iteration   1: 324583.770 ops/s
+Iteration   2: 326372.266 ops/s
+Iteration   3: 323019.476 ops/s
+Iteration   4: 325314.795 ops/s
+Iteration   5: 323947.608 ops/s
+Iteration   6: 323285.164 ops/s
+Iteration   7: 325452.470 ops/s
+Iteration   8: 323003.591 ops/s
+Iteration   9: 324659.274 ops/s
+Iteration  10: 325342.697 ops/s
+
+# Run progress: 10.00% complete, ETA 00:22:38
+# Fork: 2 of 2
+# Warmup Iteration   1: 319337.137 ops/s
+# Warmup Iteration   2: 319298.501 ops/s
+# Warmup Iteration   3: 319071.245 ops/s
+# Warmup Iteration   4: 320188.588 ops/s
+# Warmup Iteration   5: 318381.553 ops/s
+# Warmup Iteration   6: 319397.702 ops/s
+# Warmup Iteration   7: 320047.092 ops/s
+# Warmup Iteration   8: 319853.759 ops/s
+Iteration   1: 320610.206 ops/s
+Iteration   2: 319879.994 ops/s
+Iteration   3: 320285.668 ops/s
+Iteration   4: 316146.453 ops/s
+Iteration   5: 317142.485 ops/s
+Iteration   6: 316892.400 ops/s
+Iteration   7: 321187.537 ops/s
+Iteration   8: 316676.238 ops/s
+Iteration   9: 317584.854 ops/s
+Iteration  10: 317665.705 ops/s
+
+
+Result "com.meylism.databind.Serialization.dsljson":
+  321452.633 ±(99.9%) 3014.917 ops/s [Average]
+  (min, avg, max) = (316146.453, 321452.633, 326372.266), stdev = 3471.982
+  CI (99.9%): [318437.716, 324467.549] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+# VM invoker: /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/jre/bin/java
+# VM options: -Xms2g -Xmx5g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 8 iterations, 15 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Serialization.dsljson_reflection
+
+# Run progress: 20.00% complete, ETA 00:20:07
+# Fork: 1 of 2
+# Warmup Iteration   1: 119285.211 ops/s
+# Warmup Iteration   2: 121594.319 ops/s
+# Warmup Iteration   3: 121650.400 ops/s
+# Warmup Iteration   4: 121692.449 ops/s
+# Warmup Iteration   5: 121527.328 ops/s
+# Warmup Iteration   6: 121332.081 ops/s
+# Warmup Iteration   7: 121265.502 ops/s
+# Warmup Iteration   8: 121426.935 ops/s
+Iteration   1: 121141.451 ops/s
+Iteration   2: 121332.189 ops/s
+Iteration   3: 121178.469 ops/s
+Iteration   4: 121072.599 ops/s
+Iteration   5: 121092.353 ops/s
+Iteration   6: 121222.599 ops/s
+Iteration   7: 121280.896 ops/s
+Iteration   8: 121251.604 ops/s
+Iteration   9: 121106.575 ops/s
+Iteration  10: 121507.956 ops/s
+
+# Run progress: 30.00% complete, ETA 00:17:36
+# Fork: 2 of 2
+# Warmup Iteration   1: 109229.196 ops/s
+# Warmup Iteration   2: 111744.132 ops/s
+# Warmup Iteration   3: 112008.358 ops/s
+# Warmup Iteration   4: 111775.180 ops/s
+# Warmup Iteration   5: 111684.103 ops/s
+# Warmup Iteration   6: 111624.000 ops/s
+# Warmup Iteration   7: 111815.316 ops/s
+# Warmup Iteration   8: 112069.051 ops/s
+Iteration   1: 111437.327 ops/s
+Iteration   2: 111732.975 ops/s
+Iteration   3: 111987.328 ops/s
+Iteration   4: 111135.095 ops/s
+Iteration   5: 111802.586 ops/s
+Iteration   6: 111711.915 ops/s
+Iteration   7: 111770.383 ops/s
+Iteration   8: 111286.558 ops/s
+Iteration   9: 111578.592 ops/s
+Iteration  10: 112271.842 ops/s
+
+
+Result "com.meylism.databind.Serialization.dsljson_reflection":
+  116445.065 ±(99.9%) 4258.240 ops/s [Average]
+  (min, avg, max) = (111135.095, 116445.065, 121507.956), stdev = 4903.795
+  CI (99.9%): [112186.825, 120703.304] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+# VM invoker: /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/jre/bin/java
+# VM options: -Xms2g -Xmx5g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 8 iterations, 15 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Serialization.gson
+
+# Run progress: 40.00% complete, ETA 00:15:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 108150.019 ops/s
+# Warmup Iteration   2: 111585.574 ops/s
+# Warmup Iteration   3: 111544.170 ops/s
+# Warmup Iteration   4: 111572.400 ops/s
+# Warmup Iteration   5: 111583.456 ops/s
+# Warmup Iteration   6: 111578.337 ops/s
+# Warmup Iteration   7: 111735.347 ops/s
+# Warmup Iteration   8: 111562.246 ops/s
+Iteration   1: 111193.709 ops/s
+Iteration   2: 111481.345 ops/s
+Iteration   3: 111560.709 ops/s
+Iteration   4: 111024.067 ops/s
+Iteration   5: 111547.055 ops/s
+Iteration   6: 111657.302 ops/s
+Iteration   7: 111334.972 ops/s
+Iteration   8: 111674.320 ops/s
+Iteration   9: 111393.423 ops/s
+Iteration  10: 111347.759 ops/s
+
+# Run progress: 50.00% complete, ETA 00:12:34
+# Fork: 2 of 2
+# Warmup Iteration   1: 96942.123 ops/s
+# Warmup Iteration   2: 101013.140 ops/s
+# Warmup Iteration   3: 101187.256 ops/s
+# Warmup Iteration   4: 101116.083 ops/s
+# Warmup Iteration   5: 101017.320 ops/s
+# Warmup Iteration   6: 101097.946 ops/s
+# Warmup Iteration   7: 101146.669 ops/s
+# Warmup Iteration   8: 100990.095 ops/s
+Iteration   1: 100972.076 ops/s
+Iteration   2: 100974.912 ops/s
+Iteration   3: 100500.685 ops/s
+Iteration   4: 100910.830 ops/s
+Iteration   5: 101011.919 ops/s
+Iteration   6: 101239.370 ops/s
+Iteration   7: 100750.061 ops/s
+Iteration   8: 100966.624 ops/s
+Iteration   9: 101292.673 ops/s
+Iteration  10: 100733.257 ops/s
+
+
+Result "com.meylism.databind.Serialization.gson":
+  106178.353 ±(99.9%) 4674.886 ops/s [Average]
+  (min, avg, max) = (100500.685, 106178.353, 111674.320), stdev = 5383.606
+  CI (99.9%): [101503.467, 110853.239] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+# VM invoker: /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/jre/bin/java
+# VM options: -Xms2g -Xmx5g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 8 iterations, 15 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Serialization.jackson
+
+# Run progress: 60.00% complete, ETA 00:10:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 451122.419 ops/s
+# Warmup Iteration   2: 462047.040 ops/s
+# Warmup Iteration   3: 460898.564 ops/s
+# Warmup Iteration   4: 461948.290 ops/s
+# Warmup Iteration   5: 461207.963 ops/s
+# Warmup Iteration   6: 462642.568 ops/s
+# Warmup Iteration   7: 462875.132 ops/s
+# Warmup Iteration   8: 462104.200 ops/s
+Iteration   1: 462899.432 ops/s
+Iteration   2: 462635.607 ops/s
+Iteration   3: 462216.373 ops/s
+Iteration   4: 461334.130 ops/s
+Iteration   5: 462441.137 ops/s
+Iteration   6: 461943.244 ops/s
+Iteration   7: 455622.796 ops/s
+Iteration   8: 460636.777 ops/s
+Iteration   9: 461047.822 ops/s
+Iteration  10: 461967.907 ops/s
+
+# Run progress: 70.00% complete, ETA 00:07:32
+# Fork: 2 of 2
+# Warmup Iteration   1: 129554.172 ops/s
+# Warmup Iteration   2: 131847.015 ops/s
+# Warmup Iteration   3: 131925.031 ops/s
+# Warmup Iteration   4: 131959.137 ops/s
+# Warmup Iteration   5: 131973.233 ops/s
+# Warmup Iteration   6: 131832.792 ops/s
+# Warmup Iteration   7: 131899.643 ops/s
+# Warmup Iteration   8: 131809.773 ops/s
+Iteration   1: 131708.756 ops/s
+Iteration   2: 131645.685 ops/s
+Iteration   3: 131368.781 ops/s
+Iteration   4: 131759.216 ops/s
+Iteration   5: 132030.552 ops/s
+Iteration   6: 131969.314 ops/s
+Iteration   7: 131891.486 ops/s
+Iteration   8: 131559.362 ops/s
+Iteration   9: 131901.942 ops/s
+Iteration  10: 132008.275 ops/s
+
+
+Result "com.meylism.databind.Serialization.jackson":
+  296529.430 ±(99.9%) 146779.250 ops/s [Average]
+  (min, avg, max) = (131368.781, 296529.430, 462899.432), stdev = 169031.203
+  CI (99.9%): [149750.179, 443308.680] (assumes normal distribution)
+
+
+# JMH version: 1.34
+# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+# VM invoker: /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/jre/bin/java
+# VM options: -Xms2g -Xmx5g
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 8 iterations, 15 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.meylism.databind.Serialization.jackson_afterburner
+
+# Run progress: 80.00% complete, ETA 00:05:01
+# Fork: 1 of 2
+# Warmup Iteration   1: 656403.709 ops/s
+# Warmup Iteration   2: 675889.169 ops/s
+# Warmup Iteration   3: 680306.735 ops/s
+# Warmup Iteration   4: 680800.084 ops/s
+# Warmup Iteration   5: 682657.980 ops/s
+# Warmup Iteration   6: 682382.306 ops/s
+# Warmup Iteration   7: 683291.335 ops/s
+# Warmup Iteration   8: 682541.832 ops/s
+Iteration   1: 681329.518 ops/s
+Iteration   2: 680715.113 ops/s
+Iteration   3: 683179.010 ops/s
+Iteration   4: 681674.768 ops/s
+Iteration   5: 682101.973 ops/s
+Iteration   6: 681672.208 ops/s
+Iteration   7: 681763.899 ops/s
+Iteration   8: 681487.272 ops/s
+Iteration   9: 681808.973 ops/s
+Iteration  10: 682394.073 ops/s
+
+# Run progress: 90.00% complete, ETA 00:02:30
+# Fork: 2 of 2
+# Warmup Iteration   1: 179326.373 ops/s
+# Warmup Iteration   2: 182707.642 ops/s
+# Warmup Iteration   3: 183268.148 ops/s
+# Warmup Iteration   4: 183460.528 ops/s
+# Warmup Iteration   5: 183201.929 ops/s
+# Warmup Iteration   6: 183346.917 ops/s
+# Warmup Iteration   7: 183289.354 ops/s
+# Warmup Iteration   8: 183386.466 ops/s
+Iteration   1: 183491.118 ops/s
+Iteration   2: 182864.682 ops/s
+Iteration   3: 183300.925 ops/s
+Iteration   4: 183060.764 ops/s
+Iteration   5: 182903.963 ops/s
+Iteration   6: 183420.253 ops/s
+Iteration   7: 182814.121 ops/s
+Iteration   8: 183421.937 ops/s
+Iteration   9: 183179.222 ops/s
+Iteration  10: 183634.326 ops/s
+
+
+Result "com.meylism.databind.Serialization.jackson_afterburner":
+  432510.906 ±(99.9%) 222106.955 ops/s [Average]
+  (min, avg, max) = (182814.121, 432510.906, 683179.010), stdev = 255778.700
+  CI (99.9%): [210403.951, 654617.861] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:25:08
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                           Mode  Cnt       Score        Error  Units
+Serialization.dsljson              thrpt   20  321452.633 ±   3014.917  ops/s
+Serialization.dsljson_reflection   thrpt   20  116445.065 ±   4258.240  ops/s
+Serialization.gson                 thrpt   20  106178.353 ±   4674.886  ops/s
+Serialization.jackson              thrpt   20  296529.430 ± 146779.250  ops/s
+Serialization.jackson_afterburner  thrpt   20  432510.906 ± 222106.955  ops/s
