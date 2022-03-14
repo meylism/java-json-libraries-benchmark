@@ -34,6 +34,8 @@ public class Cli {
                         DeserializationCommand.class);
         com.github.rvesse.airline.Cli<Runnable> gitLikeParser = builder.build();
         gitLikeParser.parse(args).run();
+
+        new SerializationCommand().run();
     }
 
     @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "mode")
@@ -59,7 +61,7 @@ public class Cli {
 //        Json Options
         @Option(name = "--libs", description = "Libraries to test (csv). Defaults to all supported. See 'info' to know more.")
         public String libraries = "";
-        @Option(name = "--apis", description = "APIs to benchmark (csv). Available: stream, databind. Defaults to all supported. See 'info' to know more.")
+//        @Option(name = "--apis", description = "APIs to benchmark (csv). Available: stream, databind. Defaults to all supported. See 'info' to know more.")
         public String apis = "";
         @Option(name = "--number", description = "Number of random payloads to generate. One is randomly picked for each benchmark iteration. Defaults to 1.")
         public int numberOfPayloads = 1;
