@@ -1,6 +1,7 @@
 package com.meylism;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Random;
 
@@ -8,7 +9,12 @@ public final class RandomUtils {
     private static final Random RANDOM;
 
     static {
-        RANDOM = new Random();
+        String seedStr = System.getenv("SEED");
+        long seed = StringUtils.isNumeric(seedStr)
+                ? Long.parseLong(seedStr)
+                : System.nanoTime(); // only relevant for unit tests
+        System.out.println("Using SEED=" + seed + " as seed for Random");
+        RANDOM = new Random(seed);
     }
 
     private RandomUtils() {}
