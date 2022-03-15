@@ -34,8 +34,6 @@ public class Cli {
                         DeserializationCommand.class);
         com.github.rvesse.airline.Cli<Runnable> gitLikeParser = builder.build();
         gitLikeParser.parse(args).run();
-
-        new SerializationCommand().run();
     }
 
     @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "mode")

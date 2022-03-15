@@ -1,309 +1,299 @@
 # JMH version: 1.34
-# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
-# VM invoker: /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/jre/bin/java
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/java-11-openjdk-11.0.8.10-0.el7_8.x86_64/bin/java
 # VM options: -Xms2g -Xmx5g
 # Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 8 iterations, 15 s each
+# Warmup: 5 iterations, 10 s each
 # Measurement: 10 iterations, 3 s each
 # Timeout: 10 min per iteration
-# Threads: 4 threads, will synchronize iterations
+# Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Deserialization.dsljson
 
-# Run progress: 0.00% complete, ETA 00:25:00
+# Run progress: 0.00% complete, ETA 00:13:20
 # Fork: 1 of 2
-# Warmup Iteration   1: 47.423 ops/s
-# Warmup Iteration   2: 48.301 ops/s
-# Warmup Iteration   3: 48.416 ops/s
-# Warmup Iteration   4: 48.451 ops/s
-# Warmup Iteration   5: 48.427 ops/s
-# Warmup Iteration   6: 48.371 ops/s
-# Warmup Iteration   7: 48.525 ops/s
-# Warmup Iteration   8: 48.437 ops/s
-Iteration   1: 48.436 ops/s
-Iteration   2: 48.800 ops/s
-Iteration   3: 48.535 ops/s
-Iteration   4: 48.075 ops/s
-Iteration   5: 48.355 ops/s
-Iteration   6: 48.165 ops/s
-Iteration   7: 47.629 ops/s
-Iteration   8: 48.868 ops/s
-Iteration   9: 48.020 ops/s
-Iteration  10: 48.087 ops/s
+# Warmup Iteration   1: Using SEED=8678 as seed for Random
+63.730 ops/s
+# Warmup Iteration   2: 66.599 ops/s
+# Warmup Iteration   3: 69.152 ops/s
+# Warmup Iteration   4: 67.934 ops/s
+# Warmup Iteration   5: 68.159 ops/s
+Iteration   1: 69.032 ops/s
+Iteration   2: 71.429 ops/s
+Iteration   3: 68.886 ops/s
+Iteration   4: 70.352 ops/s
+Iteration   5: 69.090 ops/s
+Iteration   6: 66.197 ops/s
+Iteration   7: 70.638 ops/s
+Iteration   8: 66.748 ops/s
+Iteration   9: 65.274 ops/s
+Iteration  10: 69.067 ops/s
 
-# Run progress: 10.00% complete, ETA 00:23:15
+# Run progress: 10.00% complete, ETA 00:13:30
 # Fork: 2 of 2
-# Warmup Iteration   1: 47.381 ops/s
-# Warmup Iteration   2: 48.194 ops/s
-# Warmup Iteration   3: 48.299 ops/s
-# Warmup Iteration   4: 48.292 ops/s
-# Warmup Iteration   5: 48.183 ops/s
-# Warmup Iteration   6: 48.390 ops/s
-# Warmup Iteration   7: 48.516 ops/s
-# Warmup Iteration   8: 48.121 ops/s
-Iteration   1: 48.486 ops/s
-Iteration   2: 47.959 ops/s
-Iteration   3: 48.953 ops/s
-Iteration   4: 48.486 ops/s
-Iteration   5: 48.213 ops/s
-Iteration   6: 48.824 ops/s
-Iteration   7: 49.024 ops/s
-Iteration   8: 48.451 ops/s
-Iteration   9: 48.159 ops/s
-Iteration  10: 48.476 ops/s
+# Warmup Iteration   1: Using SEED=8678 as seed for Random
+65.054 ops/s
+# Warmup Iteration   2: 67.784 ops/s
+# Warmup Iteration   3: 70.781 ops/s
+# Warmup Iteration   4: 69.681 ops/s
+# Warmup Iteration   5: 69.205 ops/s
+Iteration   1: 69.724 ops/s
+Iteration   2: 71.955 ops/s
+Iteration   3: 70.185 ops/s
+Iteration   4: 70.849 ops/s
+Iteration   5: 72.032 ops/s
+Iteration   6: 71.651 ops/s
+Iteration   7: 69.766 ops/s
+Iteration   8: 67.731 ops/s
+Iteration   9: 66.833 ops/s
+Iteration  10: 71.192 ops/s
 
 
 Result "com.meylism.databind.Deserialization.dsljson":
-  48.400 ±(99.9%) 0.320 ops/s [Average]
-  (min, avg, max) = (47.629, 48.400, 49.024), stdev = 0.369
-  CI (99.9%): [48.080, 48.720] (assumes normal distribution)
+  69.431 ?(99.9%) 1.731 ops/s [Average]
+  (min, avg, max) = (65.274, 69.431, 72.032), stdev = 1.994
+  CI (99.9%): [67.700, 71.163] (assumes normal distribution)
 
 
 # JMH version: 1.34
-# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
-# VM invoker: /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/jre/bin/java
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/java-11-openjdk-11.0.8.10-0.el7_8.x86_64/bin/java
 # VM options: -Xms2g -Xmx5g
 # Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 8 iterations, 15 s each
+# Warmup: 5 iterations, 10 s each
 # Measurement: 10 iterations, 3 s each
 # Timeout: 10 min per iteration
-# Threads: 4 threads, will synchronize iterations
+# Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Deserialization.dsljson_reflection
 
-# Run progress: 20.00% complete, ETA 00:20:39
+# Run progress: 20.00% complete, ETA 00:12:00
 # Fork: 1 of 2
-# Warmup Iteration   1: 47.751 ops/s
-# Warmup Iteration   2: 48.858 ops/s
-# Warmup Iteration   3: 48.920 ops/s
-# Warmup Iteration   4: 48.822 ops/s
-# Warmup Iteration   5: 48.632 ops/s
-# Warmup Iteration   6: 48.976 ops/s
-# Warmup Iteration   7: 48.965 ops/s
-# Warmup Iteration   8: 48.656 ops/s
-Iteration   1: 48.861 ops/s
-Iteration   2: 48.213 ops/s
-Iteration   3: 49.493 ops/s
-Iteration   4: 49.098 ops/s
-Iteration   5: 49.256 ops/s
-Iteration   6: 48.764 ops/s
-Iteration   7: 48.778 ops/s
-Iteration   8: 48.563 ops/s
-Iteration   9: 49.194 ops/s
-Iteration  10: 48.719 ops/s
+# Warmup Iteration   1: Using SEED=8678 as seed for Random
+62.711 ops/s
+# Warmup Iteration   2: 65.741 ops/s
+# Warmup Iteration   3: 67.740 ops/s
+# Warmup Iteration   4: 66.422 ops/s
+# Warmup Iteration   5: 66.336 ops/s
+Iteration   1: 65.059 ops/s
+Iteration   2: 68.071 ops/s
+Iteration   3: 66.037 ops/s
+Iteration   4: 68.079 ops/s
+Iteration   5: 64.352 ops/s
+Iteration   6: 66.630 ops/s
+Iteration   7: 66.757 ops/s
+Iteration   8: 67.409 ops/s
+Iteration   9: 67.905 ops/s
+Iteration  10: 67.006 ops/s
 
-# Run progress: 30.00% complete, ETA 00:18:04
+# Run progress: 30.00% complete, ETA 00:10:30
 # Fork: 2 of 2
-# Warmup Iteration   1: 48.016 ops/s
-# Warmup Iteration   2: 48.895 ops/s
-# Warmup Iteration   3: 49.166 ops/s
-# Warmup Iteration   4: 49.223 ops/s
-# Warmup Iteration   5: 49.105 ops/s
-# Warmup Iteration   6: 49.092 ops/s
-# Warmup Iteration   7: 49.021 ops/s
-# Warmup Iteration   8: 49.011 ops/s
-Iteration   1: 49.492 ops/s
-Iteration   2: 48.480 ops/s
-Iteration   3: 49.018 ops/s
-Iteration   4: 49.613 ops/s
-Iteration   5: 49.232 ops/s
-Iteration   6: 48.925 ops/s
-Iteration   7: 49.593 ops/s
-Iteration   8: 48.880 ops/s
-Iteration   9: 48.732 ops/s
-Iteration  10: 49.136 ops/s
+# Warmup Iteration   1: Using SEED=8678 as seed for Random
+60.449 ops/s
+# Warmup Iteration   2: 69.926 ops/s
+# Warmup Iteration   3: 69.573 ops/s
+# Warmup Iteration   4: 70.945 ops/s
+# Warmup Iteration   5: 69.920 ops/s
+Iteration   1: 68.770 ops/s
+Iteration   2: 68.093 ops/s
+Iteration   3: 73.658 ops/s
+Iteration   4: 69.948 ops/s
+Iteration   5: 66.049 ops/s
+Iteration   6: 68.187 ops/s
+Iteration   7: 68.807 ops/s
+Iteration   8: 67.805 ops/s
+Iteration   9: 71.334 ops/s
+Iteration  10: 70.999 ops/s
 
 
 Result "com.meylism.databind.Deserialization.dsljson_reflection":
-  49.002 ±(99.9%) 0.332 ops/s [Average]
-  (min, avg, max) = (48.213, 49.002, 49.613), stdev = 0.382
-  CI (99.9%): [48.670, 49.334] (assumes normal distribution)
+  68.048 ?(99.9%) 1.907 ops/s [Average]
+  (min, avg, max) = (64.352, 68.048, 73.658), stdev = 2.196
+  CI (99.9%): [66.141, 69.954] (assumes normal distribution)
 
 
 # JMH version: 1.34
-# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
-# VM invoker: /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/jre/bin/java
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/java-11-openjdk-11.0.8.10-0.el7_8.x86_64/bin/java
 # VM options: -Xms2g -Xmx5g
 # Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 8 iterations, 15 s each
+# Warmup: 5 iterations, 10 s each
 # Measurement: 10 iterations, 3 s each
 # Timeout: 10 min per iteration
-# Threads: 4 threads, will synchronize iterations
+# Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Deserialization.gson
 
-# Run progress: 40.00% complete, ETA 00:15:29
+# Run progress: 40.00% complete, ETA 00:08:59
 # Fork: 1 of 2
-# Warmup Iteration   1: 8.708 ops/s
-# Warmup Iteration   2: 8.972 ops/s
-# Warmup Iteration   3: 8.960 ops/s
-# Warmup Iteration   4: 8.931 ops/s
-# Warmup Iteration   5: 8.970 ops/s
-# Warmup Iteration   6: 8.973 ops/s
-# Warmup Iteration   7: 8.947 ops/s
-# Warmup Iteration   8: 8.918 ops/s
-Iteration   1: 8.855 ops/s
-Iteration   2: 8.860 ops/s
-Iteration   3: 8.941 ops/s
-Iteration   4: 9.072 ops/s
-Iteration   5: 8.866 ops/s
-Iteration   6: 8.993 ops/s
-Iteration   7: 8.970 ops/s
-Iteration   8: 8.922 ops/s
-Iteration   9: 8.891 ops/s
-Iteration  10: 8.981 ops/s
+# Warmup Iteration   1: Using SEED=8678 as seed for Random
+18.249 ops/s
+# Warmup Iteration   2: 20.391 ops/s
+# Warmup Iteration   3: 20.454 ops/s
+# Warmup Iteration   4: 20.661 ops/s
+# Warmup Iteration   5: 21.161 ops/s
+Iteration   1: 22.704 ops/s
+Iteration   2: 20.999 ops/s
+Iteration   3: 21.231 ops/s
+Iteration   4: 21.264 ops/s
+Iteration   5: 20.371 ops/s
+Iteration   6: 21.588 ops/s
+Iteration   7: 19.945 ops/s
+Iteration   8: 21.202 ops/s
+Iteration   9: 21.886 ops/s
+Iteration  10: 21.749 ops/s
 
-# Run progress: 50.00% complete, ETA 00:13:02
+# Run progress: 50.00% complete, ETA 00:07:43
 # Fork: 2 of 2
-# Warmup Iteration   1: 8.754 ops/s
-# Warmup Iteration   2: 9.050 ops/s
-# Warmup Iteration   3: 9.143 ops/s
-# Warmup Iteration   4: 9.058 ops/s
-# Warmup Iteration   5: 9.112 ops/s
-# Warmup Iteration   6: 9.033 ops/s
-# Warmup Iteration   7: 9.047 ops/s
-# Warmup Iteration   8: 9.026 ops/s
-Iteration   1: 8.993 ops/s
-Iteration   2: 9.016 ops/s
-Iteration   3: 9.004 ops/s
-Iteration   4: 9.074 ops/s
-Iteration   5: 8.991 ops/s
-Iteration   6: 9.004 ops/s
-Iteration   7: 9.054 ops/s
-Iteration   8: 8.972 ops/s
-Iteration   9: 9.055 ops/s
-Iteration  10: 9.014 ops/s
+# Warmup Iteration   1: Using SEED=8678 as seed for Random
+18.961 ops/s
+# Warmup Iteration   2: 19.849 ops/s
+# Warmup Iteration   3: 21.107 ops/s
+# Warmup Iteration   4: 20.792 ops/s
+# Warmup Iteration   5: 20.700 ops/s
+Iteration   1: 21.095 ops/s
+Iteration   2: 20.076 ops/s
+Iteration   3: 20.414 ops/s
+Iteration   4: 19.907 ops/s
+Iteration   5: 21.582 ops/s
+Iteration   6: 20.109 ops/s
+Iteration   7: 19.874 ops/s
+Iteration   8: 19.593 ops/s
+Iteration   9: 20.407 ops/s
+Iteration  10: 20.858 ops/s
 
 
 Result "com.meylism.databind.Deserialization.gson":
-  8.976 ±(99.9%) 0.059 ops/s [Average]
-  (min, avg, max) = (8.855, 8.976, 9.074), stdev = 0.068
-  CI (99.9%): [8.917, 9.036] (assumes normal distribution)
+  20.843 ?(99.9%) 0.716 ops/s [Average]
+  (min, avg, max) = (19.593, 20.843, 22.704), stdev = 0.825
+  CI (99.9%): [20.126, 21.559] (assumes normal distribution)
 
 
 # JMH version: 1.34
-# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
-# VM invoker: /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/jre/bin/java
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/java-11-openjdk-11.0.8.10-0.el7_8.x86_64/bin/java
 # VM options: -Xms2g -Xmx5g
 # Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 8 iterations, 15 s each
+# Warmup: 5 iterations, 10 s each
 # Measurement: 10 iterations, 3 s each
 # Timeout: 10 min per iteration
-# Threads: 4 threads, will synchronize iterations
+# Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Deserialization.jackson
 
-# Run progress: 60.00% complete, ETA 00:10:30
+# Run progress: 60.00% complete, ETA 00:06:19
 # Fork: 1 of 2
-# Warmup Iteration   1: 9.690 ops/s
-# Warmup Iteration   2: 9.885 ops/s
-# Warmup Iteration   3: 9.845 ops/s
-# Warmup Iteration   4: 9.892 ops/s
-# Warmup Iteration   5: 9.842 ops/s
-# Warmup Iteration   6: 9.858 ops/s
-# Warmup Iteration   7: 9.918 ops/s
-# Warmup Iteration   8: 9.853 ops/s
-Iteration   1: 9.936 ops/s
-Iteration   2: 9.872 ops/s
-Iteration   3: 9.836 ops/s
-Iteration   4: 9.980 ops/s
-Iteration   5: 9.756 ops/s
-Iteration   6: 9.903 ops/s
-Iteration   7: 9.791 ops/s
-Iteration   8: 9.975 ops/s
-Iteration   9: 9.903 ops/s
-Iteration  10: 9.928 ops/s
+# Warmup Iteration   1: Using SEED=8678 as seed for Random
+19.835 ops/s
+# Warmup Iteration   2: 22.094 ops/s
+# Warmup Iteration   3: 22.136 ops/s
+# Warmup Iteration   4: 21.287 ops/s
+# Warmup Iteration   5: 21.355 ops/s
+Iteration   1: 22.868 ops/s
+Iteration   2: 21.476 ops/s
+Iteration   3: 19.728 ops/s
+Iteration   4: 20.247 ops/s
+Iteration   5: 21.343 ops/s
+Iteration   6: 21.214 ops/s
+Iteration   7: 20.857 ops/s
+Iteration   8: 20.046 ops/s
+Iteration   9: 21.752 ops/s
+Iteration  10: 20.912 ops/s
 
-# Run progress: 70.00% complete, ETA 00:07:55
+# Run progress: 70.00% complete, ETA 00:04:48
 # Fork: 2 of 2
-# Warmup Iteration   1: 9.588 ops/s
-# Warmup Iteration   2: 9.878 ops/s
-# Warmup Iteration   3: 9.808 ops/s
-# Warmup Iteration   4: 9.806 ops/s
-# Warmup Iteration   5: 9.834 ops/s
-# Warmup Iteration   6: 9.800 ops/s
-# Warmup Iteration   7: 9.888 ops/s
-# Warmup Iteration   8: 9.816 ops/s
-Iteration   1: 9.889 ops/s
-Iteration   2: 9.856 ops/s
-Iteration   3: 9.848 ops/s
-Iteration   4: 9.852 ops/s
-Iteration   5: 9.781 ops/s
-Iteration   6: 9.971 ops/s
-Iteration   7: 9.834 ops/s
-Iteration   8: 9.778 ops/s
-Iteration   9: 9.720 ops/s
-Iteration  10: 9.823 ops/s
+# Warmup Iteration   1: Using SEED=8678 as seed for Random
+19.256 ops/s
+# Warmup Iteration   2: 21.788 ops/s
+# Warmup Iteration   3: 21.882 ops/s
+# Warmup Iteration   4: 21.530 ops/s
+# Warmup Iteration   5: 22.300 ops/s
+Iteration   1: 22.326 ops/s
+Iteration   2: 22.800 ops/s
+Iteration   3: 21.569 ops/s
+Iteration   4: 22.269 ops/s
+Iteration   5: 21.663 ops/s
+Iteration   6: 20.828 ops/s
+Iteration   7: 22.565 ops/s
+Iteration   8: 21.298 ops/s
+Iteration   9: 21.727 ops/s
+Iteration  10: 21.189 ops/s
 
 
 Result "com.meylism.databind.Deserialization.jackson":
-  9.862 ±(99.9%) 0.065 ops/s [Average]
-  (min, avg, max) = (9.720, 9.862, 9.980), stdev = 0.075
-  CI (99.9%): [9.797, 9.926] (assumes normal distribution)
+  21.434 ?(99.9%) 0.753 ops/s [Average]
+  (min, avg, max) = (19.728, 21.434, 22.868), stdev = 0.868
+  CI (99.9%): [20.680, 22.187] (assumes normal distribution)
 
 
 # JMH version: 1.34
-# VM version: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
-# VM invoker: /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/jre/bin/java
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/java-11-openjdk-11.0.8.10-0.el7_8.x86_64/bin/java
 # VM options: -Xms2g -Xmx5g
 # Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
-# Warmup: 8 iterations, 15 s each
+# Warmup: 5 iterations, 10 s each
 # Measurement: 10 iterations, 3 s each
 # Timeout: 10 min per iteration
-# Threads: 4 threads, will synchronize iterations
+# Threads: 16 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
 # Benchmark: com.meylism.databind.Deserialization.jackson_afterburner
 
-# Run progress: 80.00% complete, ETA 00:05:18
+# Run progress: 80.00% complete, ETA 00:03:14
 # Fork: 1 of 2
-# Warmup Iteration   1: 9.575 ops/s
-# Warmup Iteration   2: 9.804 ops/s
-# Warmup Iteration   3: 9.745 ops/s
-# Warmup Iteration   4: 9.691 ops/s
-# Warmup Iteration   5: 9.743 ops/s
-# Warmup Iteration   6: 9.738 ops/s
-# Warmup Iteration   7: 9.751 ops/s
-# Warmup Iteration   8: 9.741 ops/s
-Iteration   1: 9.742 ops/s
-Iteration   2: 9.736 ops/s
-Iteration   3: 9.820 ops/s
-Iteration   4: 9.795 ops/s
-Iteration   5: 9.751 ops/s
-Iteration   6: 9.744 ops/s
-Iteration   7: 9.817 ops/s
-Iteration   8: 9.681 ops/s
-Iteration   9: 9.725 ops/s
-Iteration  10: 9.666 ops/s
+# Warmup Iteration   1: Using SEED=8678 as seed for Random
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.fasterxml.jackson.module.afterburner.util.MyClassLoader (file:/home/meylism/projects/java-json-libraries-benchmark/target/benchmark-with-dependencies.jar) to method java.lang.ClassLoader.findLoadedClass(java.lang.String)
+WARNING: Please consider reporting this to the maintainers of com.fasterxml.jackson.module.afterburner.util.MyClassLoader
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+19.899 ops/s
+# Warmup Iteration   2: 22.372 ops/s
+# Warmup Iteration   3: 22.739 ops/s
+# Warmup Iteration   4: 21.772 ops/s
+# Warmup Iteration   5: 22.101 ops/s
+Iteration   1: 22.246 ops/s
+Iteration   2: 22.659 ops/s
+Iteration   3: 21.686 ops/s
+Iteration   4: 22.651 ops/s
+Iteration   5: 21.488 ops/s
+Iteration   6: 21.465 ops/s
+Iteration   7: 21.421 ops/s
+Iteration   8: 21.573 ops/s
+Iteration   9: 21.165 ops/s
+Iteration  10: 21.579 ops/s
 
-# Run progress: 90.00% complete, ETA 00:02:39
+# Run progress: 90.00% complete, ETA 00:01:38
 # Fork: 2 of 2
-# Warmup Iteration   1: 9.585 ops/s
-# Warmup Iteration   2: 9.770 ops/s
-# Warmup Iteration   3: 9.687 ops/s
-# Warmup Iteration   4: 9.800 ops/s
-# Warmup Iteration   5: 9.801 ops/s
-# Warmup Iteration   6: 9.825 ops/s
-# Warmup Iteration   7: 9.816 ops/s
-# Warmup Iteration   8: 9.869 ops/s
-Iteration   1: 9.800 ops/s
-Iteration   2: 9.805 ops/s
-Iteration   3: 9.740 ops/s
-Iteration   4: 9.772 ops/s
-Iteration   5: 9.826 ops/s
-Iteration   6: 9.787 ops/s
-Iteration   7: 9.841 ops/s
-Iteration   8: 9.831 ops/s
-Iteration   9: 9.730 ops/s
-Iteration  10: 9.749 ops/s
+# Warmup Iteration   1: Using SEED=8678 as seed for Random
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.fasterxml.jackson.module.afterburner.util.MyClassLoader (file:/home/meylism/projects/java-json-libraries-benchmark/target/benchmark-with-dependencies.jar) to method java.lang.ClassLoader.findLoadedClass(java.lang.String)
+WARNING: Please consider reporting this to the maintainers of com.fasterxml.jackson.module.afterburner.util.MyClassLoader
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+19.778 ops/s
+# Warmup Iteration   2: 20.100 ops/s
+# Warmup Iteration   3: 20.906 ops/s
+# Warmup Iteration   4: 21.678 ops/s
+# Warmup Iteration   5: 21.909 ops/s
+Iteration   1: 20.802 ops/s
+Iteration   2: 21.769 ops/s
+Iteration   3: 21.523 ops/s
+Iteration   4: 21.924 ops/s
+Iteration   5: 21.288 ops/s
+Iteration   6: 20.971 ops/s
+Iteration   7: 23.851 ops/s
+Iteration   8: 22.794 ops/s
+Iteration   9: 22.490 ops/s
+Iteration  10: 21.601 ops/s
 
 
 Result "com.meylism.databind.Deserialization.jackson_afterburner":
-  9.768 ±(99.9%) 0.043 ops/s [Average]
-  (min, avg, max) = (9.666, 9.768, 9.841), stdev = 0.049
-  CI (99.9%): [9.725, 9.811] (assumes normal distribution)
+  21.847 ?(99.9%) 0.637 ops/s [Average]
+  (min, avg, max) = (20.802, 21.847, 23.851), stdev = 0.734
+  CI (99.9%): [21.210, 22.485] (assumes normal distribution)
 
 
-# Run complete. Total time: 00:26:41
+# Run complete. Total time: 00:16:25
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -312,8 +302,8 @@ the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from th
 Do not assume the numbers tell you what you want them to tell.
 
 Benchmark                             Mode  Cnt   Score   Error  Units
-Deserialization.dsljson              thrpt   20  48.400 ± 0.320  ops/s
-Deserialization.dsljson_reflection   thrpt   20  49.002 ± 0.332  ops/s
-Deserialization.gson                 thrpt   20   8.976 ± 0.059  ops/s
-Deserialization.jackson              thrpt   20   9.862 ± 0.065  ops/s
-Deserialization.jackson_afterburner  thrpt   20   9.768 ± 0.043  ops/s
+Deserialization.dsljson              thrpt   20  69.431 ? 1.731  ops/s
+Deserialization.dsljson_reflection   thrpt   20  68.048 ? 1.907  ops/s
+Deserialization.gson                 thrpt   20  20.843 ? 0.716  ops/s
+Deserialization.jackson              thrpt   20  21.434 ? 0.753  ops/s
+Deserialization.jackson_afterburner  thrpt   20  21.847 ? 0.637  ops/s
