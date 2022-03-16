@@ -30,7 +30,7 @@ def extractScores(f):
                     # error = 0
                     # if (len(values) > 7):
                     #    error = values[5]
-                    score = values[3] + values[4] + values[5]
+                    score = values[3] + '±' + values[5]
                     result[name] = score
             elif l.startswith('Benchmark'):
                 benchmark = True

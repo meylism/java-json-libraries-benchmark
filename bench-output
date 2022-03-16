@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 DATA_TYPES="integers floats strings non_ascii_strings booleans complex"
 NUMBERS="1"
